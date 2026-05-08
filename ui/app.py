@@ -9,7 +9,14 @@ import shutil
 from orchestrator.orchestrator import Orchestrator
 from config.settings import INPUTS_DIR
 
-
+hide_elements = """
+    <style>
+    #GithubIcon {visibility: hidden;}
+    a[href*="github"] {display: none;}
+    [data-testid="stToolbar"] {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_elements, unsafe_allow_html=True)
 
 # ── Configuración de página ───────────────────────────────────
 st.set_page_config(
