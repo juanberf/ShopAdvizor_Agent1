@@ -13,7 +13,6 @@ hide_elements = """
     <style>
     #GithubIcon {visibility: hidden;}
     a[href*="github"] {display: none;}
-    [data-testid="stToolbar"] {visibility: hidden;}
     </style>
 """
 st.markdown(hide_elements, unsafe_allow_html=True)
