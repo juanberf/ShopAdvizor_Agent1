@@ -81,12 +81,18 @@ def _load_rules() -> dict:
 
 
 def _load_rules_from_local() -> dict:
-    """Carga las reglas desde data/rules/rules.yaml."""
+    """Busca rules.yaml en assets/ o data/rules/"""
+    # Intentar en assets/ primero (para Streamlit Cloud)
+    assets_path = Path(__file__).parent.parent.parent / "assets" / "rules.yaml"
+    if assets_path.exists():
+        with open(assets_path, "r", encoding="utf-8") as f:
+            return yaml.safe_load(f)
+    
+    # Fallback a data/rules/ (para desarrollo local)
     rules_path = RULES_DIR / "rules.yaml"
     if not rules_path.exists():
         raise FileNotFoundError(
-            f"Archivo de reglas no encontrado: {rules_path}\n"
-            "Crea data/rules/rules.yaml o configura Google Drive."
+            f"Archivo de reglas no encontrado en {assets_path} ni en {rules_path}"
         )
     with open(rules_path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
