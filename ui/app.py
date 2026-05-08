@@ -326,9 +326,18 @@ elif st.session_state.stage == "results":
                         )
 
     # Input del usuario (fuera del bucle for)
-    user_input = st.chat_input("Escribe tu pregunta aquí...")
+    with st.form(key="chat_form", clear_on_submit=True):
+        col1, col2 = st.columns([5, 1])
+        with col1:
+            user_input = st.text_input(
+                "Pregunta",
+                placeholder="Escribe tu pregunta aquí...",
+                label_visibility="collapsed"
+            )
+        with col2:
+            submitted = st.form_submit_button("Enviar")
 
-    if user_input:
+    if submitted and user_input:
         with st.spinner("Consultando los datos de la campaña..."):
             response = st.session_state.orchestrator.chat(user_input)
 
