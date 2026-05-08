@@ -179,66 +179,67 @@ elif st.session_state.stage == "running":
     progress_bar = st.progress(0)
     status_text = st.empty()
 
-    steps_log = st.container()
-    log_messages = []
-
     def progress_callback(step: str, message: str, percent: int):
         progress_bar.progress(percent / 100)
         status_text.markdown(f"**{message}**")
-        log_messages.append(f"{'✅' if percent > 0 else '❌'} {message}")
 
-    # Ejecutar pipeline
     result = st.session_state.orchestrator.run_pipeline(
-    user_id="streamlit_user",
-    excel_path=st.session_state.excel_path,
-    pdf_path=st.session_state.pdf_path,
-    tone=st.session_state.tone,
-    language=st.session_state.language,
-    progress_callback=progress_callback,
-    skip_source_validation=st.session_state.get("skip_source_validation", False),
-)
+        user_id="streamlit_user",
+        excel_path=st.session_state.excel_path,
+        pdf_path=st.session_state.pdf_path,
+        tone=st.session_state.tone,
+        language=st.session_state.language,
+        progress_callback=progress_callback,
+        skip_source_validation=st.session_state.get("skip_source_validation", False),
+    )
 
-# Limpiar el flag después de usarlo
     st.session_state.skip_source_validation = False
-
     st.session_state.pipeline_result = result
 
     if result["status"] == "success":
-        # Leer el .txt generado
         txt_path = result["onepager_path"]
         if txt_path and Path(txt_path).exists():
             st.session_state.insights_text = Path(txt_path).read_text(encoding="utf-8")
             st.session_state.insights_path = txt_path
-
         progress_bar.progress(1.0)
         status_text.markdown("**✅ Informe generado correctamente**")
         st.session_state.stage = "results"
         st.rerun()
 
-    else:
+    elif result["status"] == "source_mismatch_error":
         progress_bar.progress(0)
-        error = result.get("error", "Error desconocido")
+        st.warning("⚠️ Los archivos pueden no ser de la misma campaña")
+        st.markdown("Verifica que has subido el Excel y PDF correctos antes de continuar.")
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("✅ Continuar igualmente"):
+                st.session_state.skip_source_validation = True
+                st.session_state.stage = "running"
+                st.rerun()
+        with col2:
+            if st.button("⬅️ Volver a cargar archivos"):
+                st.session_state.orchestrator.reset()
+                st.session_state.stage = "config"
+                st.rerun()
 
-        if result["status"] == "source_mismatch_error":
-            st.warning("⚠️ Los archivos pueden no ser de la misma campaña")
-            #st.markdown(f"> {result.get('error', '')}")
-            st.markdown("Verifica que has subido el Excel y PDF correctos antes de continuar.")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        if st.button("✅ Continuar igualmente"):
-            # Relanzar pipeline saltando la validación cruzada
-            st.session_state.skip_source_validation = True
-            st.session_state.stage = "running"
-            st.rerun()
-
-    with col2:
-        if st.button("⬅️ Volver a cargar archivos"):
+    elif result["status"] == "validation_error":
+        progress_bar.progress(0)
+        st.error("❌ Error de validación en los datos")
+        st.markdown(f"{result.get('error', '')}")
+        if st.button("⬅️ Volver a intentarlo"):
             st.session_state.orchestrator.reset()
             st.session_state.stage = "config"
             st.rerun()
 
+    else:
+        progress_bar.progress(0)
+        st.error("❌ Algo ha ido mal")
+        st.markdown(f"{result.get('error', 'Error desconocido')}")
+        st.markdown("Si el problema persiste, contacta con el administrador.")
+        if st.button("⬅️ Volver a intentarlo"):
+            st.session_state.orchestrator.reset()
+            st.session_state.stage = "config"
+            st.rerun()
 
 # ══════════════════════════════════════════════════════════════
 # STAGE 3 — RESULTADOS Y MODO CONVERSACIONAL
