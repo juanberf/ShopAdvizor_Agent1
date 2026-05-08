@@ -1,0 +1,131 @@
+# ============================================================
+# ShopAdvizor Reporting Agent — Reglas de Alerta
+# ============================================================
+# Este archivo define los umbrales numéricos que usa SA3
+# para categorizar el rendimiento de cada KPI y generar alertas.
+# ============================================================
+# Niveles de alerta:
+#   critical_below  → 🔴 Alerta crítica
+#   warning_below   → 🟡 Alerta de atención
+#   good_above      → 🟢 Positivo destacable
+# ============================================================
+
+version: "1.0"
+last_updated: "2026-04-29"
+author: "Research Director"
+
+kpi_rules:
+
+  saz_score:
+    field: value
+    critical_below: 35
+    warning_below: 45
+    good_above: 70
+    description: "SAZ Score — índice de rendimiento global del producto en la categoría"
+
+  rating:
+    field: value
+    critical_below: 3.0
+    warning_below: 3.5
+    good_above: 4.5
+    description: "Rating — valoración media de satisfacción global (0-5)"
+
+  nps:
+    field: value
+    critical_below: 0
+    warning_below: 10
+    good_above: 50
+    description: "NPS — Net Promoter Score, predisposición a recomendar (-100 a +100)"
+
+  purchase_intent:
+    field: value
+    critical_below: 15
+    warning_below: 25 
+    good_above: 35
+    description: "Intención de compra — % Top Box sin precio"
+
+  notoriete:
+    field: value
+    critical_below: 10
+    warning_below: 20
+    good_above: 35
+    description: "Notoriedad — % consumidores que conocían el producto previamente"
+
+  price_sensitivity:
+    field: value
+    critical_below: -30
+    warning_below: -20
+    good_above: 0
+    description: "Sensibilidad al precio — impacto del precio sobre intención de compra"
+
+  innovation:
+    field: value
+    critical_below: 40
+    warning_below: 50
+    good_above: 70
+    description: "Innovación — percepción de originalidad y diferenciación del producto"
+
+  packaging:
+    field: value
+    critical_below: 6.5
+    warning_below: 7.5
+    good_above: 8.5
+    description: "Emballage — valoración del envase (0-10)"
+
+
+# ============================================================
+# Reglas de ranking — posición relativa en la categoría
+# ============================================================
+# top_percentile:    🟢 si está en el X% mejor de la categoría
+# bottom_percentile: 🔴 si está en el X% peor de la categoría
+
+ranking_rules:
+
+  saz_score:
+    top_percentile: 20
+    bottom_percentile: 80
+    description: "Posición en ranking SAZ Score vs. categoría"
+
+  rating:
+    top_percentile: 20
+    bottom_percentile: 80
+    description: "Posición en ranking Rating vs. categoría"
+
+  nps:
+    top_percentile: 20
+    bottom_percentile: 80
+    description: "Posición en ranking NPS vs. categoría"
+
+  purchase_intent:
+    top_percentile: 20
+    bottom_percentile: 80
+    description: "Posición en ranking Intención de compra vs. categoría"
+
+  price_sensitivity:
+    top_percentile: 20
+    bottom_percentile: 80
+    description: "Posición en ranking Sensibilidad precio vs. categoría"
+
+  packaging:
+    top_percentile: 20
+    bottom_percentile: 80
+    description: "Posición en ranking Emballage vs. categoría"
+
+
+# ============================================================
+# Reglas Pre vs Post — variación tras la prueba del producto
+# ============================================================
+# min_delta:  variación mínima esperada entre pre y post (en puntos)
+# good_delta: variación que merece alerta positiva
+
+pre_post_rules:
+
+  purchase_intent:
+    min_delta: 5
+    good_delta: 15
+    description: "Variación en intención de compra entre pre y post evaluación"
+
+  pre_post_attributes:
+    min_delta: 5
+    good_delta: 15
+    description: "Mejora mínima esperada en atributos del producto tras la prueba"

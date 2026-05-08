@@ -1,0 +1,2869 @@
+{
+  "campaign_metadata": {
+    "product_name": "Lames de rasoir pour homme Fusion 5 Gillette",
+    "brand": "Gillette",
+    "category": "Rasage homme",
+    "campaign_date": "Mars 2026",
+    "campaign_price": 31.99,
+    "ean": "8700216304498",
+    "testers_count": 144,
+    "products_returned": 223
+  },
+  "kpis": {
+    "saz_score": {
+      "value": 87,
+      "benchmark_min": 46,
+      "benchmark_max": 87,
+      "rank": 1,
+      "total_products": 19
+    },
+    "rating": {
+      "value": 4.73,
+      "reviews_count": 198,
+      "rank": 1,
+      "benchmark_min": 4.17,
+      "benchmark_max": 4.73
+    },
+    "nps": {
+      "value": 73,
+      "rank": 1,
+      "benchmark_min": 26,
+      "benchmark_max": 73
+    },
+    "purchase_intent": {
+      "value": 49,
+      "rank": 1,
+      "benchmark_min": 20,
+      "benchmark_max": 49
+    },
+    "notoriete": {
+      "value": 26,
+      "rank": 4
+    },
+    "price_sensitivity": {
+      "value": -21,
+      "rank": 19
+    },
+    "innovation": {
+      "value": 69,
+      "rank": 17
+    },
+    "packaging": {
+      "value": 8.68,
+      "rank": 2
+    }
+  },
+  "competitive": {
+    "category_rankings": {
+      "saz_score": {
+        "our_rank": 1,
+        "total_products": 19,
+        "our_value": 87,
+        "category_avg": 60,
+        "category_max": 87,
+        "category_min": 46
+      },
+      "rating": {
+        "our_rank": 1,
+        "total_products": 19,
+        "our_value": 4.73,
+        "category_avg": 4.42,
+        "category_max": 4.73,
+        "category_min": 4.17
+      },
+      "nps": {
+        "our_rank": 1,
+        "total_products": 19,
+        "our_value": 73,
+        "category_avg": 48,
+        "category_max": 73,
+        "category_min": 26
+      },
+      "purchase_intent": {
+        "our_rank": 1,
+        "total_products": 19,
+        "our_value": 49,
+        "category_avg": 28,
+        "category_max": 49,
+        "category_min": 20
+      },
+      "notoriete": {
+        "our_rank": 4,
+        "total_products": 19,
+        "our_value": 26,
+        "category_avg": 22,
+        "category_max": 33,
+        "category_min": 11
+      },
+      "price_sensitivity": {
+        "our_rank": 19,
+        "total_products": 19,
+        "our_value": -21,
+        "category_avg": -7,
+        "category_max": 5,
+        "category_min": -21
+      },
+      "innovation": {
+        "our_rank": 17,
+        "total_products": 24,
+        "our_value": 69,
+        "category_avg": 69,
+        "category_max": 86,
+        "category_min": 45
+      },
+      "packaging": {
+        "our_rank": 2,
+        "total_products": 30,
+        "our_value": 8.68,
+        "category_avg": 8.28,
+        "category_max": 8.69,
+        "category_min": 7.57
+      }
+    },
+    "brands_purchased": {
+      "Gillette": {
+        "purchased_12m": 80,
+        "habitual": 72
+      },
+      "Wilkinson": {
+        "purchased_12m": 41,
+        "habitual": 22
+      },
+      "Bic": {
+        "purchased_12m": 21,
+        "habitual": 3
+      },
+      "Philips": {
+        "purchased_12m": 10,
+        "habitual": 3
+      },
+      "Carrefour": {
+        "purchased_12m": 5,
+        "habitual": 0
+      }
+    },
+    "consumer_loyalty": {
+      "fideles": 64,
+      "non_fideles": 36
+    },
+    "tester_profile": {
+      "gender": {
+        "homme": 99,
+        "femme": 1
+      },
+      "age_groups": {
+        "18-24": 2,
+        "25-34": 19,
+        "35-44": 29,
+        "45-54": 22,
+        "55+": 28
+      }
+    }
+  },
+  "pre_evaluation": {
+    "segments": [
+      "Tous",
+      "Homme",
+      "Femme",
+      "Entre 18 et 24 ans",
+      "Entre 25 et 34 ans",
+      "Entre 35 et 44 ans",
+      "Entre 45 et 54 ans",
+      "Plus de 54 ans",
+      "Sans enfants",
+      "Avec enfant(s)",
+      "Nord Est",
+      "Nord Ouest",
+      "Sud Est",
+      "Sud Ouest",
+      "Région Parisienne"
+    ],
+    "questions": [
+      {
+        "question_id": "pre_q1",
+        "question_text": "Avez-vous déjà acheté ou consommé des LAMES POUR RASOIRS RECHARGEABLES ?",
+        "responses": {
+          "Tous": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 10,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 6,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 11,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 73
+          },
+          "Homme": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 10,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 6,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 11,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 73
+          },
+          "Femme": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 0,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 0,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 0,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 100
+          },
+          "Entre 18 et 24 ans": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 0,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 0,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 0,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 100
+          },
+          "Entre 25 et 34 ans": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 0,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 4,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 11,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 85
+          },
+          "Entre 35 et 44 ans": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 2,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 7,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 12,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 79
+          },
+          "Entre 45 et 54 ans": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 13,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 13,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 0,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 75
+          },
+          "Plus de 54 ans": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 23,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 3,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 20,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 55
+          },
+          "Sans enfants": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 16,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 7,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 13,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 64
+          },
+          "Avec enfant(s)": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 6,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 6,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 10,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 78
+          },
+          "Nord Est": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 20,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 0,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 20,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 60
+          },
+          "Nord Ouest": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 22,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 0,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 17,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 61
+          },
+          "Sud Est": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 9,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 9,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 6,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 77
+          },
+          "Sud Ouest": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 30,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 0,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 20,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 50
+          },
+          "Région Parisienne": {
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours du mois dernier": 2,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 3 derniers mois": 9,
+            "Oui, j'ai déjà acheté ou consommé ce type de produit au cours des 12 derniers mois": 9,
+            "Non, je n'ai jamais acheté ou consommé ce type de produit": 81
+          }
+        }
+      },
+      {
+        "question_id": "pre_q2",
+        "question_text": "Veuillez préciser toutes les marques de LAMES POUR RASOIRS RECHARGEABLES que vous avez achetée(s) ou consommée(s) au cours des 12 derniers mois ?",
+        "responses": {
+          "Tous": {
+            "Gillette": 80,
+            "Wilkinson": 41,
+            "Bic": 21,
+            "Philips": 10,
+            "Carrefour": 5,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 8
+          },
+          "Homme": {
+            "Gillette": 80,
+            "Wilkinson": 41,
+            "Bic": 21,
+            "Philips": 10,
+            "Carrefour": 5,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 8
+          },
+          "Femme": {
+            "Gillette": 0,
+            "Wilkinson": 0,
+            "Bic": 0,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Gillette": 0,
+            "Wilkinson": 0,
+            "Bic": 0,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Entre 25 et 34 ans": {
+            "Gillette": 75,
+            "Wilkinson": 25,
+            "Bic": 0,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 25
+          },
+          "Entre 35 et 44 ans": {
+            "Gillette": 67,
+            "Wilkinson": 44,
+            "Bic": 22,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 11
+          },
+          "Entre 45 et 54 ans": {
+            "Gillette": 75,
+            "Wilkinson": 38,
+            "Bic": 25,
+            "Philips": 13,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Plus de 54 ans": {
+            "Gillette": 89,
+            "Wilkinson": 44,
+            "Bic": 22,
+            "Philips": 17,
+            "Carrefour": 11,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 6
+          },
+          "Sans enfants": {
+            "Gillette": 85,
+            "Wilkinson": 35,
+            "Bic": 25,
+            "Philips": 10,
+            "Carrefour": 10,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 5
+          },
+          "Avec enfant(s)": {
+            "Gillette": 74,
+            "Wilkinson": 47,
+            "Bic": 16,
+            "Philips": 11,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 11
+          },
+          "Nord Est": {
+            "Gillette": 100,
+            "Wilkinson": 50,
+            "Bic": 33,
+            "Philips": 33,
+            "Carrefour": 17,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Nord Ouest": {
+            "Gillette": 57,
+            "Wilkinson": 43,
+            "Bic": 43,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 14
+          },
+          "Sud Est": {
+            "Gillette": 88,
+            "Wilkinson": 38,
+            "Bic": 13,
+            "Philips": 13,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Sud Ouest": {
+            "Gillette": 100,
+            "Wilkinson": 20,
+            "Bic": 20,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Région Parisienne": {
+            "Gillette": 69,
+            "Wilkinson": 46,
+            "Bic": 8,
+            "Philips": 8,
+            "Carrefour": 8,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 15
+          }
+        }
+      },
+      {
+        "question_id": "pre_q3",
+        "question_text": "Et laquelle achetez-vous ou consommez-vous le plus souvent ?",
+        "responses": {
+          "Tous": {
+            "Gillette": 72,
+            "Wilkinson": 22,
+            "Bic": 3,
+            "Philips": 3,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Homme": {
+            "Gillette": 72,
+            "Wilkinson": 22,
+            "Bic": 3,
+            "Philips": 3,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Femme": {
+            "Gillette": 0,
+            "Wilkinson": 0,
+            "Bic": 0,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Gillette": 0,
+            "Wilkinson": 0,
+            "Bic": 0,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Entre 25 et 34 ans": {
+            "Gillette": 100,
+            "Wilkinson": 0,
+            "Bic": 0,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Entre 35 et 44 ans": {
+            "Gillette": 50,
+            "Wilkinson": 50,
+            "Bic": 0,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Entre 45 et 54 ans": {
+            "Gillette": 63,
+            "Wilkinson": 25,
+            "Bic": 13,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Plus de 54 ans": {
+            "Gillette": 82,
+            "Wilkinson": 12,
+            "Bic": 0,
+            "Philips": 6,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Sans enfants": {
+            "Gillette": 74,
+            "Wilkinson": 16,
+            "Bic": 5,
+            "Philips": 5,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Avec enfant(s)": {
+            "Gillette": 71,
+            "Wilkinson": 29,
+            "Bic": 0,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Nord Est": {
+            "Gillette": 83,
+            "Wilkinson": 17,
+            "Bic": 0,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Nord Ouest": {
+            "Gillette": 67,
+            "Wilkinson": 17,
+            "Bic": 17,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Sud Est": {
+            "Gillette": 63,
+            "Wilkinson": 38,
+            "Bic": 0,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Sud Ouest": {
+            "Gillette": 80,
+            "Wilkinson": 20,
+            "Bic": 0,
+            "Philips": 0,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          },
+          "Région Parisienne": {
+            "Gillette": 73,
+            "Wilkinson": 18,
+            "Bic": 0,
+            "Philips": 9,
+            "Carrefour": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0,
+            "Je ne me souviens pas": 0
+          }
+        }
+      },
+      {
+        "question_id": "pre_q4",
+        "question_text": "A quelle fréquence achetez-vous des LAMES POUR RASOIRS RECHARGEABLES ?",
+        "responses": {
+          "Tous": {
+            "Plus d'une fois par semaine": 3,
+            "Une fois par semaine": 8,
+            "Une fois tous les 15 jours": 3,
+            "Une fois par mois": 21,
+            "Une fois tous les deux mois": 15,
+            "Une fois tous les 3 mois": 13,
+            "Une fois tous les 4 – 6 mois": 23,
+            "Une fois par an ou moins souvent": 15
+          },
+          "Homme": {
+            "Plus d'une fois par semaine": 3,
+            "Une fois par semaine": 8,
+            "Une fois tous les 15 jours": 3,
+            "Une fois par mois": 21,
+            "Une fois tous les deux mois": 15,
+            "Une fois tous les 3 mois": 13,
+            "Une fois tous les 4 – 6 mois": 23,
+            "Une fois par an ou moins souvent": 15
+          },
+          "Femme": {
+            "Plus d'une fois par semaine": 0,
+            "Une fois par semaine": 0,
+            "Une fois tous les 15 jours": 0,
+            "Une fois par mois": 0,
+            "Une fois tous les deux mois": 0,
+            "Une fois tous les 3 mois": 0,
+            "Une fois tous les 4 – 6 mois": 0,
+            "Une fois par an ou moins souvent": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Plus d'une fois par semaine": 0,
+            "Une fois par semaine": 0,
+            "Une fois tous les 15 jours": 0,
+            "Une fois par mois": 0,
+            "Une fois tous les deux mois": 0,
+            "Une fois tous les 3 mois": 0,
+            "Une fois tous les 4 – 6 mois": 0,
+            "Une fois par an ou moins souvent": 0
+          },
+          "Entre 25 et 34 ans": {
+            "Plus d'une fois par semaine": 0,
+            "Une fois par semaine": 0,
+            "Une fois tous les 15 jours": 0,
+            "Une fois par mois": 25,
+            "Une fois tous les deux mois": 0,
+            "Une fois tous les 3 mois": 0,
+            "Une fois tous les 4 – 6 mois": 50,
+            "Une fois par an ou moins souvent": 25
+          },
+          "Entre 35 et 44 ans": {
+            "Plus d'une fois par semaine": 0,
+            "Une fois par semaine": 11,
+            "Une fois tous les 15 jours": 0,
+            "Une fois par mois": 0,
+            "Une fois tous les deux mois": 22,
+            "Une fois tous les 3 mois": 22,
+            "Une fois tous les 4 – 6 mois": 22,
+            "Une fois par an ou moins souvent": 22
+          },
+          "Entre 45 et 54 ans": {
+            "Plus d'une fois par semaine": 0,
+            "Une fois par semaine": 13,
+            "Une fois tous les 15 jours": 0,
+            "Une fois par mois": 50,
+            "Une fois tous les deux mois": 0,
+            "Une fois tous les 3 mois": 13,
+            "Une fois tous les 4 – 6 mois": 25,
+            "Une fois par an ou moins souvent": 0
+          },
+          "Plus de 54 ans": {
+            "Plus d'une fois par semaine": 6,
+            "Une fois par semaine": 6,
+            "Une fois tous les 15 jours": 6,
+            "Une fois par mois": 17,
+            "Une fois tous les deux mois": 22,
+            "Une fois tous les 3 mois": 11,
+            "Une fois tous les 4 – 6 mois": 17,
+            "Une fois par an ou moins souvent": 17
+          },
+          "Sans enfants": {
+            "Plus d'une fois par semaine": 5,
+            "Une fois par semaine": 0,
+            "Une fois tous les 15 jours": 5,
+            "Une fois par mois": 25,
+            "Une fois tous les deux mois": 20,
+            "Une fois tous les 3 mois": 15,
+            "Une fois tous les 4 – 6 mois": 15,
+            "Une fois par an ou moins souvent": 15
+          },
+          "Avec enfant(s)": {
+            "Plus d'une fois par semaine": 0,
+            "Une fois par semaine": 16,
+            "Une fois tous les 15 jours": 0,
+            "Une fois par mois": 16,
+            "Une fois tous les deux mois": 11,
+            "Une fois tous les 3 mois": 11,
+            "Une fois tous les 4 – 6 mois": 32,
+            "Une fois par an ou moins souvent": 16
+          },
+          "Nord Est": {
+            "Plus d'une fois par semaine": 0,
+            "Une fois par semaine": 0,
+            "Une fois tous les 15 jours": 0,
+            "Une fois par mois": 33,
+            "Une fois tous les deux mois": 0,
+            "Une fois tous les 3 mois": 17,
+            "Une fois tous les 4 – 6 mois": 17,
+            "Une fois par an ou moins souvent": 33
+          },
+          "Nord Ouest": {
+            "Plus d'une fois par semaine": 0,
+            "Une fois par semaine": 0,
+            "Une fois tous les 15 jours": 14,
+            "Une fois par mois": 14,
+            "Une fois tous les deux mois": 14,
+            "Une fois tous les 3 mois": 0,
+            "Une fois tous les 4 – 6 mois": 57,
+            "Une fois par an ou moins souvent": 0
+          },
+          "Sud Est": {
+            "Plus d'une fois par semaine": 0,
+            "Une fois par semaine": 0,
+            "Une fois tous les 15 jours": 0,
+            "Une fois par mois": 13,
+            "Une fois tous les deux mois": 13,
+            "Une fois tous les 3 mois": 38,
+            "Une fois tous les 4 – 6 mois": 13,
+            "Une fois par an ou moins souvent": 25
+          },
+          "Sud Ouest": {
+            "Plus d'une fois par semaine": 20,
+            "Une fois par semaine": 0,
+            "Une fois tous les 15 jours": 0,
+            "Une fois par mois": 0,
+            "Une fois tous les deux mois": 20,
+            "Une fois tous les 3 mois": 20,
+            "Une fois tous les 4 – 6 mois": 0,
+            "Une fois par an ou moins souvent": 40
+          },
+          "Région Parisienne": {
+            "Plus d'une fois par semaine": 0,
+            "Une fois par semaine": 23,
+            "Une fois tous les 15 jours": 0,
+            "Une fois par mois": 31,
+            "Une fois tous les deux mois": 23,
+            "Une fois tous les 3 mois": 0,
+            "Une fois tous les 4 – 6 mois": 23,
+            "Une fois par an ou moins souvent": 0
+          }
+        }
+      },
+      {
+        "question_id": "pre_q5",
+        "question_text": "Si vous ne pouvez pas trouver votre marque / variété habituelle, que faites-vous ?",
+        "responses": {
+          "Tous": {
+            "Je choisis la même variété d'une autre marque": 23,
+            "Je choisis une autre variété de la même marque": 26,
+            "Je n'achète pas ce produit ce jour-là": 46,
+            "Je cherche ce produit dans un autre magasin": 3,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 3
+          },
+          "Homme": {
+            "Je choisis la même variété d'une autre marque": 23,
+            "Je choisis une autre variété de la même marque": 26,
+            "Je n'achète pas ce produit ce jour-là": 46,
+            "Je cherche ce produit dans un autre magasin": 3,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 3
+          },
+          "Femme": {
+            "Je choisis la même variété d'une autre marque": 0,
+            "Je choisis une autre variété de la même marque": 0,
+            "Je n'achète pas ce produit ce jour-là": 0,
+            "Je cherche ce produit dans un autre magasin": 0,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Je choisis la même variété d'une autre marque": 0,
+            "Je choisis une autre variété de la même marque": 0,
+            "Je n'achète pas ce produit ce jour-là": 0,
+            "Je cherche ce produit dans un autre magasin": 0,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 0
+          },
+          "Entre 25 et 34 ans": {
+            "Je choisis la même variété d'une autre marque": 25,
+            "Je choisis une autre variété de la même marque": 50,
+            "Je n'achète pas ce produit ce jour-là": 25,
+            "Je cherche ce produit dans un autre magasin": 0,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 0
+          },
+          "Entre 35 et 44 ans": {
+            "Je choisis la même variété d'une autre marque": 11,
+            "Je choisis une autre variété de la même marque": 22,
+            "Je n'achète pas ce produit ce jour-là": 44,
+            "Je cherche ce produit dans un autre magasin": 11,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 11
+          },
+          "Entre 45 et 54 ans": {
+            "Je choisis la même variété d'une autre marque": 38,
+            "Je choisis une autre variété de la même marque": 25,
+            "Je n'achète pas ce produit ce jour-là": 38,
+            "Je cherche ce produit dans un autre magasin": 0,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 0
+          },
+          "Plus de 54 ans": {
+            "Je choisis la même variété d'une autre marque": 22,
+            "Je choisis une autre variété de la même marque": 22,
+            "Je n'achète pas ce produit ce jour-là": 56,
+            "Je cherche ce produit dans un autre magasin": 0,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 0
+          },
+          "Sans enfants": {
+            "Je choisis la même variété d'une autre marque": 20,
+            "Je choisis une autre variété de la même marque": 30,
+            "Je n'achète pas ce produit ce jour-là": 50,
+            "Je cherche ce produit dans un autre magasin": 0,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 0
+          },
+          "Avec enfant(s)": {
+            "Je choisis la même variété d'une autre marque": 26,
+            "Je choisis une autre variété de la même marque": 21,
+            "Je n'achète pas ce produit ce jour-là": 42,
+            "Je cherche ce produit dans un autre magasin": 5,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 5
+          },
+          "Nord Est": {
+            "Je choisis la même variété d'une autre marque": 33,
+            "Je choisis une autre variété de la même marque": 0,
+            "Je n'achète pas ce produit ce jour-là": 67,
+            "Je cherche ce produit dans un autre magasin": 0,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 0
+          },
+          "Nord Ouest": {
+            "Je choisis la même variété d'une autre marque": 43,
+            "Je choisis une autre variété de la même marque": 0,
+            "Je n'achète pas ce produit ce jour-là": 57,
+            "Je cherche ce produit dans un autre magasin": 0,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 0
+          },
+          "Sud Est": {
+            "Je choisis la même variété d'une autre marque": 0,
+            "Je choisis une autre variété de la même marque": 13,
+            "Je n'achète pas ce produit ce jour-là": 75,
+            "Je cherche ce produit dans un autre magasin": 13,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 0
+          },
+          "Sud Ouest": {
+            "Je choisis la même variété d'une autre marque": 0,
+            "Je choisis une autre variété de la même marque": 40,
+            "Je n'achète pas ce produit ce jour-là": 60,
+            "Je cherche ce produit dans un autre magasin": 0,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 0
+          },
+          "Région Parisienne": {
+            "Je choisis la même variété d'une autre marque": 31,
+            "Je choisis une autre variété de la même marque": 54,
+            "Je n'achète pas ce produit ce jour-là": 8,
+            "Je cherche ce produit dans un autre magasin": 0,
+            "Cela n'a pas d'importance, j'achète n'importe quelle marque ou variété": 8
+          }
+        }
+      },
+      {
+        "question_id": "pre_q6",
+        "question_text": "Comment avez-vous entendu parler du produit « Lames de rasoir pour homme Fusion 5 Gillette » la première fois ?",
+        "responses": {
+          "Tous": {
+            "J'ai vu la publicité à la télévision": 1,
+            "J'ai vu le produit chez Carrefour": 12,
+            "J'ai vu le produit dans un autre magasin": 3,
+            "Quelqu'un m'en a parlé": 1,
+            "J'ai vu de la publicité dans la presse": 4,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 2,
+            "J'ai vu une campagne d'affichage dans la rue": 1,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 2,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 74,
+            "Autres": 0
+          },
+          "Homme": {
+            "J'ai vu la publicité à la télévision": 1,
+            "J'ai vu le produit chez Carrefour": 12,
+            "J'ai vu le produit dans un autre magasin": 3,
+            "Quelqu'un m'en a parlé": 1,
+            "J'ai vu de la publicité dans la presse": 4,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 2,
+            "J'ai vu une campagne d'affichage dans la rue": 1,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 2,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 73,
+            "Autres": 0
+          },
+          "Femme": {
+            "J'ai vu la publicité à la télévision": 0,
+            "J'ai vu le produit chez Carrefour": 0,
+            "J'ai vu le produit dans un autre magasin": 0,
+            "Quelqu'un m'en a parlé": 0,
+            "J'ai vu de la publicité dans la presse": 0,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 0,
+            "J'ai vu une campagne d'affichage dans la rue": 0,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 0,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 100,
+            "Autres": 0
+          },
+          "Entre 18 et 24 ans": {
+            "J'ai vu la publicité à la télévision": 33,
+            "J'ai vu le produit chez Carrefour": 0,
+            "J'ai vu le produit dans un autre magasin": 0,
+            "Quelqu'un m'en a parlé": 0,
+            "J'ai vu de la publicité dans la presse": 0,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 33,
+            "J'ai vu une campagne d'affichage dans la rue": 0,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 0,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 33,
+            "Autres": 0
+          },
+          "Entre 25 et 34 ans": {
+            "J'ai vu la publicité à la télévision": 0,
+            "J'ai vu le produit chez Carrefour": 7,
+            "J'ai vu le produit dans un autre magasin": 4,
+            "Quelqu'un m'en a parlé": 0,
+            "J'ai vu de la publicité dans la presse": 0,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 4,
+            "J'ai vu une campagne d'affichage dans la rue": 0,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 0,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 85,
+            "Autres": 0
+          },
+          "Entre 35 et 44 ans": {
+            "J'ai vu la publicité à la télévision": 2,
+            "J'ai vu le produit chez Carrefour": 7,
+            "J'ai vu le produit dans un autre magasin": 2,
+            "Quelqu'un m'en a parlé": 0,
+            "J'ai vu de la publicité dans la presse": 12,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 0,
+            "J'ai vu une campagne d'affichage dans la rue": 0,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 5,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 71,
+            "Autres": 0
+          },
+          "Entre 45 et 54 ans": {
+            "J'ai vu la publicité à la télévision": 0,
+            "J'ai vu le produit chez Carrefour": 6,
+            "J'ai vu le produit dans un autre magasin": 3,
+            "Quelqu'un m'en a parlé": 0,
+            "J'ai vu de la publicité dans la presse": 3,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 3,
+            "J'ai vu une campagne d'affichage dans la rue": 3,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 0,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 81,
+            "Autres": 0
+          },
+          "Plus de 54 ans": {
+            "J'ai vu la publicité à la télévision": 0,
+            "J'ai vu le produit chez Carrefour": 25,
+            "J'ai vu le produit dans un autre magasin": 3,
+            "Quelqu'un m'en a parlé": 5,
+            "J'ai vu de la publicité dans la presse": 0,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 0,
+            "J'ai vu une campagne d'affichage dans la rue": 0,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 3,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 65,
+            "Autres": 0
+          },
+          "Sans enfants": {
+            "J'ai vu la publicité à la télévision": 4,
+            "J'ai vu le produit chez Carrefour": 14,
+            "J'ai vu le produit dans un autre magasin": 2,
+            "Quelqu'un m'en a parlé": 0,
+            "J'ai vu de la publicité dans la presse": 5,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 4,
+            "J'ai vu une campagne d'affichage dans la rue": 0,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 0,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 71,
+            "Autres": 0
+          },
+          "Avec enfant(s)": {
+            "J'ai vu la publicité à la télévision": 0,
+            "J'ai vu le produit chez Carrefour": 10,
+            "J'ai vu le produit dans un autre magasin": 3,
+            "Quelqu'un m'en a parlé": 2,
+            "J'ai vu de la publicité dans la presse": 3,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 1,
+            "J'ai vu une campagne d'affichage dans la rue": 1,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 3,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 75,
+            "Autres": 0
+          },
+          "Nord Est": {
+            "J'ai vu la publicité à la télévision": 0,
+            "J'ai vu le produit chez Carrefour": 20,
+            "J'ai vu le produit dans un autre magasin": 7,
+            "Quelqu'un m'en a parlé": 0,
+            "J'ai vu de la publicité dans la presse": 0,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 7,
+            "J'ai vu une campagne d'affichage dans la rue": 7,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 0,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 60,
+            "Autres": 0
+          },
+          "Nord Ouest": {
+            "J'ai vu la publicité à la télévision": 0,
+            "J'ai vu le produit chez Carrefour": 17,
+            "J'ai vu le produit dans un autre magasin": 0,
+            "Quelqu'un m'en a parlé": 0,
+            "J'ai vu de la publicité dans la presse": 11,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 6,
+            "J'ai vu une campagne d'affichage dans la rue": 0,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 0,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 67,
+            "Autres": 0
+          },
+          "Sud Est": {
+            "J'ai vu la publicité à la télévision": 0,
+            "J'ai vu le produit chez Carrefour": 9,
+            "J'ai vu le produit dans un autre magasin": 3,
+            "Quelqu'un m'en a parlé": 0,
+            "J'ai vu de la publicité dans la presse": 3,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 3,
+            "J'ai vu une campagne d'affichage dans la rue": 0,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 9,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 74,
+            "Autres": 0
+          },
+          "Sud Ouest": {
+            "J'ai vu la publicité à la télévision": 0,
+            "J'ai vu le produit chez Carrefour": 20,
+            "J'ai vu le produit dans un autre magasin": 0,
+            "Quelqu'un m'en a parlé": 0,
+            "J'ai vu de la publicité dans la presse": 0,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 0,
+            "J'ai vu une campagne d'affichage dans la rue": 0,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 0,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 80,
+            "Autres": 0
+          },
+          "Région Parisienne": {
+            "J'ai vu la publicité à la télévision": 3,
+            "J'ai vu le produit chez Carrefour": 9,
+            "J'ai vu le produit dans un autre magasin": 3,
+            "Quelqu'un m'en a parlé": 3,
+            "J'ai vu de la publicité dans la presse": 5,
+            "J'ai entendu de la publicité à la radio": 0,
+            "J'ai vu le produit sur le prospectus d'un magasin / ou lors d'une animation commerciale": 0,
+            "J'ai vu une campagne d'affichage dans la rue": 0,
+            "J'ai vu le produit sur internet/ les réseaux sociaux": 0,
+            "Avec le coupon MON AVIS LE REND GRATUIT, je ne l'avais pas remarqué avant": 78,
+            "Autres": 0
+          }
+        }
+      },
+      {
+        "question_id": "pre_q7",
+        "question_text": "Parmi les produits proposés sur MonAvisLeRendGratuit, pour quelles raisons avez-vous choisi le produit « Lames de rasoir pour homme Fusion 5 Gillette » ?",
+        "responses": {
+          "Tous": {
+            "Pour la marque": 32,
+            "C'est gratuit": 33,
+            "C'est une nouveauté": 10,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 14,
+            "La description m'a donné envie de le découvrir": 19,
+            "Pour le type de produit": 44,
+            "Autres raisons": 1
+          },
+          "Homme": {
+            "Pour la marque": 32,
+            "C'est gratuit": 32,
+            "C'est une nouveauté": 10,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 13,
+            "La description m'a donné envie de le découvrir": 19,
+            "Pour le type de produit": 44,
+            "Autres raisons": 1
+          },
+          "Femme": {
+            "Pour la marque": 100,
+            "C'est gratuit": 100,
+            "C'est une nouveauté": 0,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 100,
+            "La description m'a donné envie de le découvrir": 100,
+            "Pour le type de produit": 0,
+            "Autres raisons": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Pour la marque": 33,
+            "C'est gratuit": 0,
+            "C'est une nouveauté": 0,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 33,
+            "La description m'a donné envie de le découvrir": 0,
+            "Pour le type de produit": 33,
+            "Autres raisons": 0
+          },
+          "Entre 25 et 34 ans": {
+            "Pour la marque": 19,
+            "C'est gratuit": 37,
+            "C'est une nouveauté": 7,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 22,
+            "La description m'a donné envie de le découvrir": 33,
+            "Pour le type de produit": 30,
+            "Autres raisons": 0
+          },
+          "Entre 35 et 44 ans": {
+            "Pour la marque": 29,
+            "C'est gratuit": 29,
+            "C'est une nouveauté": 10,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 17,
+            "La description m'a donné envie de le découvrir": 21,
+            "Pour le type de produit": 36,
+            "Autres raisons": 0
+          },
+          "Entre 45 et 54 ans": {
+            "Pour la marque": 22,
+            "C'est gratuit": 44,
+            "C'est une nouveauté": 13,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 6,
+            "La description m'a donné envie de le découvrir": 16,
+            "Pour le type de produit": 44,
+            "Autres raisons": 0
+          },
+          "Plus de 54 ans": {
+            "Pour la marque": 53,
+            "C'est gratuit": 28,
+            "C'est une nouveauté": 10,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 10,
+            "La description m'a donné envie de le découvrir": 13,
+            "Pour le type de produit": 63,
+            "Autres raisons": 5
+          },
+          "Sans enfants": {
+            "Pour la marque": 38,
+            "C'est gratuit": 30,
+            "C'est une nouveauté": 4,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 16,
+            "La description m'a donné envie de le découvrir": 21,
+            "Pour le type de produit": 50,
+            "Autres raisons": 4
+          },
+          "Avec enfant(s)": {
+            "Pour la marque": 28,
+            "C'est gratuit": 34,
+            "C'est une nouveauté": 14,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 13,
+            "La description m'a donné envie de le découvrir": 18,
+            "Pour le type de produit": 40,
+            "Autres raisons": 0
+          },
+          "Nord Est": {
+            "Pour la marque": 40,
+            "C'est gratuit": 13,
+            "C'est une nouveauté": 13,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 27,
+            "La description m'a donné envie de le découvrir": 13,
+            "Pour le type de produit": 40,
+            "Autres raisons": 0
+          },
+          "Nord Ouest": {
+            "Pour la marque": 39,
+            "C'est gratuit": 50,
+            "C'est une nouveauté": 6,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 11,
+            "La description m'a donné envie de le découvrir": 17,
+            "Pour le type de produit": 50,
+            "Autres raisons": 0
+          },
+          "Sud Est": {
+            "Pour la marque": 27,
+            "C'est gratuit": 38,
+            "C'est une nouveauté": 18,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 18,
+            "La description m'a donné envie de le découvrir": 27,
+            "Pour le type de produit": 47,
+            "Autres raisons": 3
+          },
+          "Sud Ouest": {
+            "Pour la marque": 50,
+            "C'est gratuit": 10,
+            "C'est une nouveauté": 10,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 0,
+            "La description m'a donné envie de le découvrir": 20,
+            "Pour le type de produit": 60,
+            "Autres raisons": 0
+          },
+          "Région Parisienne": {
+            "Pour la marque": 28,
+            "C'est gratuit": 33,
+            "C'est une nouveauté": 6,
+            "C'est un produit que je connaissais et que j'avais envie d´essayer": 12,
+            "La description m'a donné envie de le découvrir": 18,
+            "Pour le type de produit": 39,
+            "Autres raisons": 2
+          }
+        }
+      },
+      {
+        "question_id": "pre_q8",
+        "question_text": "Le produit « Lames de rasoir pour homme Fusion 5 Gillette » - Semble nouveau et différent des autres produits de ce type",
+        "responses": {
+          "Tous": {
+            "Pas du tout d'accord": 1,
+            "Plutôt pas d'accord": 6,
+            "Ni d'accord,ni pas d'accord": 46,
+            "Plutôt d'accord": 24,
+            "Tout à fait d'accord": 23
+          },
+          "Homme": {
+            "Pas du tout d'accord": 1,
+            "Plutôt pas d'accord": 6,
+            "Ni d'accord,ni pas d'accord": 46,
+            "Plutôt d'accord": 25,
+            "Tout à fait d'accord": 23
+          }
+        }
+      }
+    ]
+  },
+  "post_evaluation": {
+    "segments": [
+      "Tous",
+      "Homme",
+      "Femme",
+      "Entre 18 et 24 ans",
+      "Entre 25 et 34 ans",
+      "Entre 35 et 44 ans",
+      "Entre 45 et 54 ans",
+      "Plus de 54 ans",
+      "Sans enfants",
+      "Avec enfant(s)",
+      "Nord Est",
+      "Nord Ouest",
+      "Sud Est",
+      "Sud Ouest",
+      "Région Parisienne"
+    ],
+    "questions": [
+      {
+        "question_id": "post_q1",
+        "question_text": "Avez-vous personnellement utilisé le produit « Lames de rasoir pour homme Fusion 5 Gillette » ?",
+        "responses": {
+          "Tous": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 88,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 13,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Homme": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 87,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 13,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Femme": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 100,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 0,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 67,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 33,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Entre 25 et 34 ans": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 93,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 7,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Entre 35 et 44 ans": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 93,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 7,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Entre 45 et 54 ans": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 81,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 19,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Plus de 54 ans": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 85,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 15,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Sans enfants": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 84,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 16,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Avec enfant(s)": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 90,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 10,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Nord Est": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 87,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 13,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Nord Ouest": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 94,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 6,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Sud Est": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 85,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 15,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Sud Ouest": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 100,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 0,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          },
+          "Région Parisienne": {
+            "Oui, je l'ai personnellement essayé et personne d'autre ne l'a essayé": 85,
+            "Oui, je l'ai personnellement essayé ainsi que d'autres personnes de mon foyer": 15,
+            "Non, je ne l'ai pas essayé mais d'autres personnes de mon foyer l'ont essayé": 0,
+            "Je ne l'ai pas encore essayé": 0
+          }
+        }
+      },
+      {
+        "question_id": "post_q2",
+        "question_text": "Diriez-vous du produit « Lames de rasoir pour homme Fusion 5 Gillette » que vous en êtes…",
+        "responses": {
+          "Tous": {
+            "Très satisfait(e)": 52,
+            "Satisfait(e)": 41,
+            "Ni satisfait(e), ni pas satisfait(e)": 7,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Homme": {
+            "Très satisfait(e)": 52,
+            "Satisfait(e)": 41,
+            "Ni satisfait(e), ni pas satisfait(e)": 7,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Femme": {
+            "Très satisfait(e)": 100,
+            "Satisfait(e)": 0,
+            "Ni satisfait(e), ni pas satisfait(e)": 0,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Très satisfait(e)": 67,
+            "Satisfait(e)": 0,
+            "Ni satisfait(e), ni pas satisfait(e)": 33,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Entre 25 et 34 ans": {
+            "Très satisfait(e)": 52,
+            "Satisfait(e)": 33,
+            "Ni satisfait(e), ni pas satisfait(e)": 15,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Entre 35 et 44 ans": {
+            "Très satisfait(e)": 50,
+            "Satisfait(e)": 50,
+            "Ni satisfait(e), ni pas satisfait(e)": 0,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Entre 45 et 54 ans": {
+            "Très satisfait(e)": 50,
+            "Satisfait(e)": 44,
+            "Ni satisfait(e), ni pas satisfait(e)": 6,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Plus de 54 ans": {
+            "Très satisfait(e)": 55,
+            "Satisfait(e)": 38,
+            "Ni satisfait(e), ni pas satisfait(e)": 8,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Sans enfants": {
+            "Très satisfait(e)": 54,
+            "Satisfait(e)": 41,
+            "Ni satisfait(e), ni pas satisfait(e)": 5,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Avec enfant(s)": {
+            "Très satisfait(e)": 51,
+            "Satisfait(e)": 41,
+            "Ni satisfait(e), ni pas satisfait(e)": 8,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Nord Est": {
+            "Très satisfait(e)": 73,
+            "Satisfait(e)": 27,
+            "Ni satisfait(e), ni pas satisfait(e)": 0,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Nord Ouest": {
+            "Très satisfait(e)": 56,
+            "Satisfait(e)": 28,
+            "Ni satisfait(e), ni pas satisfait(e)": 17,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Sud Est": {
+            "Très satisfait(e)": 62,
+            "Satisfait(e)": 29,
+            "Ni satisfait(e), ni pas satisfait(e)": 9,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Sud Ouest": {
+            "Très satisfait(e)": 70,
+            "Satisfait(e)": 30,
+            "Ni satisfait(e), ni pas satisfait(e)": 0,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          },
+          "Région Parisienne": {
+            "Très satisfait(e)": 39,
+            "Satisfait(e)": 55,
+            "Ni satisfait(e), ni pas satisfait(e)": 6,
+            "Pas satisfait(e)": 0,
+            "Pas du tout satisfait(e)": 0
+          }
+        }
+      },
+      {
+        "question_id": "post_q3",
+        "question_text": "En comparaison avec votre marque habituelle ce produit est",
+        "responses": {
+          "Tous": {
+            "Vraiment mieux que ma marque habituelle": 26,
+            "Plutôt mieux que ma marque habituelle": 26,
+            "Aussi bien que ma marque habituelle": 49,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Homme": {
+            "Vraiment mieux que ma marque habituelle": 26,
+            "Plutôt mieux que ma marque habituelle": 26,
+            "Aussi bien que ma marque habituelle": 49,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Femme": {
+            "Vraiment mieux que ma marque habituelle": 0,
+            "Plutôt mieux que ma marque habituelle": 0,
+            "Aussi bien que ma marque habituelle": 0,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Vraiment mieux que ma marque habituelle": 0,
+            "Plutôt mieux que ma marque habituelle": 0,
+            "Aussi bien que ma marque habituelle": 0,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Entre 25 et 34 ans": {
+            "Vraiment mieux que ma marque habituelle": 25,
+            "Plutôt mieux que ma marque habituelle": 0,
+            "Aussi bien que ma marque habituelle": 75,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Entre 35 et 44 ans": {
+            "Vraiment mieux que ma marque habituelle": 22,
+            "Plutôt mieux que ma marque habituelle": 22,
+            "Aussi bien que ma marque habituelle": 56,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Entre 45 et 54 ans": {
+            "Vraiment mieux que ma marque habituelle": 38,
+            "Plutôt mieux que ma marque habituelle": 38,
+            "Aussi bien que ma marque habituelle": 25,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Plus de 54 ans": {
+            "Vraiment mieux que ma marque habituelle": 22,
+            "Plutôt mieux que ma marque habituelle": 28,
+            "Aussi bien que ma marque habituelle": 50,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Sans enfants": {
+            "Vraiment mieux que ma marque habituelle": 25,
+            "Plutôt mieux que ma marque habituelle": 25,
+            "Aussi bien que ma marque habituelle": 50,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Avec enfant(s)": {
+            "Vraiment mieux que ma marque habituelle": 26,
+            "Plutôt mieux que ma marque habituelle": 26,
+            "Aussi bien que ma marque habituelle": 47,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Nord Est": {
+            "Vraiment mieux que ma marque habituelle": 33,
+            "Plutôt mieux que ma marque habituelle": 17,
+            "Aussi bien que ma marque habituelle": 50,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Nord Ouest": {
+            "Vraiment mieux que ma marque habituelle": 29,
+            "Plutôt mieux que ma marque habituelle": 14,
+            "Aussi bien que ma marque habituelle": 57,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Sud Est": {
+            "Vraiment mieux que ma marque habituelle": 13,
+            "Plutôt mieux que ma marque habituelle": 38,
+            "Aussi bien que ma marque habituelle": 50,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Sud Ouest": {
+            "Vraiment mieux que ma marque habituelle": 60,
+            "Plutôt mieux que ma marque habituelle": 0,
+            "Aussi bien que ma marque habituelle": 40,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          },
+          "Région Parisienne": {
+            "Vraiment mieux que ma marque habituelle": 15,
+            "Plutôt mieux que ma marque habituelle": 39,
+            "Aussi bien que ma marque habituelle": 46,
+            "Plutôt moins bien que ma marque habituelle": 0,
+            "Vraiment moins bien que ma marque habituelle": 0
+          }
+        }
+      },
+      {
+        "question_id": "post_q4",
+        "question_text": "Quelle serait votre intention d'acheter le produit ?",
+        "responses": {
+          "Tous": {
+            "Je l'achèterais certainement": 49,
+            "Je l'achèterais probablement": 31,
+            "Je ne sais pas si je l'achèterais ou non": 21,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Homme": {
+            "Je l'achèterais certainement": 48,
+            "Je l'achèterais probablement": 31,
+            "Je ne sais pas si je l'achèterais ou non": 21,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Femme": {
+            "Je l'achèterais certainement": 100,
+            "Je l'achèterais probablement": 0,
+            "Je ne sais pas si je l'achèterais ou non": 0,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Je l'achèterais certainement": 67,
+            "Je l'achèterais probablement": 33,
+            "Je ne sais pas si je l'achèterais ou non": 0,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Entre 25 et 34 ans": {
+            "Je l'achèterais certainement": 52,
+            "Je l'achèterais probablement": 33,
+            "Je ne sais pas si je l'achèterais ou non": 15,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Entre 35 et 44 ans": {
+            "Je l'achèterais certainement": 33,
+            "Je l'achèterais probablement": 36,
+            "Je ne sais pas si je l'achèterais ou non": 31,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Entre 45 et 54 ans": {
+            "Je l'achèterais certainement": 44,
+            "Je l'achèterais probablement": 41,
+            "Je ne sais pas si je l'achèterais ou non": 16,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Plus de 54 ans": {
+            "Je l'achèterais certainement": 65,
+            "Je l'achèterais probablement": 15,
+            "Je ne sais pas si je l'achèterais ou non": 20,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Sans enfants": {
+            "Je l'achèterais certainement": 54,
+            "Je l'achèterais probablement": 25,
+            "Je ne sais pas si je l'achèterais ou non": 21,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Avec enfant(s)": {
+            "Je l'achèterais certainement": 46,
+            "Je l'achèterais probablement": 34,
+            "Je ne sais pas si je l'achèterais ou non": 21,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Nord Est": {
+            "Je l'achèterais certainement": 67,
+            "Je l'achèterais probablement": 27,
+            "Je ne sais pas si je l'achèterais ou non": 7,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Nord Ouest": {
+            "Je l'achèterais certainement": 50,
+            "Je l'achèterais probablement": 17,
+            "Je ne sais pas si je l'achèterais ou non": 33,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Sud Est": {
+            "Je l'achèterais certainement": 59,
+            "Je l'achèterais probablement": 35,
+            "Je ne sais pas si je l'achèterais ou non": 6,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Sud Ouest": {
+            "Je l'achèterais certainement": 50,
+            "Je l'achèterais probablement": 30,
+            "Je ne sais pas si je l'achèterais ou non": 20,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          },
+          "Région Parisienne": {
+            "Je l'achèterais certainement": 39,
+            "Je l'achèterais probablement": 33,
+            "Je ne sais pas si je l'achèterais ou non": 28,
+            "Je ne l'achèterais probablement pas": 0,
+            "Je ne l'achèterais certainement pas": 0
+          }
+        }
+      },
+      {
+        "question_id": "post_q5",
+        "question_text": "Quelle marque ou quel produit cesseriez-vous d'acheter définitivement pour acheter « Lames de rasoir pour homme Fusion 5 Gillette » ?",
+        "responses": {
+          "Tous": {
+            "Gillette": 4,
+            "Wilkinson": 2,
+            "Bic": 2,
+            "Philips": 1,
+            "Je ne me souviens pas": 1,
+            "Carrefour": 1,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 88,
+            "Aucun, je n'achèterais pas ce produit": 4,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Homme": {
+            "Gillette": 4,
+            "Wilkinson": 2,
+            "Bic": 2,
+            "Philips": 1,
+            "Je ne me souviens pas": 1,
+            "Carrefour": 1,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 87,
+            "Aucun, je n'achèterais pas ce produit": 4,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Femme": {
+            "Gillette": 0,
+            "Wilkinson": 0,
+            "Bic": 0,
+            "Philips": 0,
+            "Je ne me souviens pas": 0,
+            "Carrefour": 0,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 100,
+            "Aucun, je n'achèterais pas ce produit": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Gillette": 0,
+            "Wilkinson": 0,
+            "Bic": 0,
+            "Philips": 0,
+            "Je ne me souviens pas": 0,
+            "Carrefour": 0,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 100,
+            "Aucun, je n'achèterais pas ce produit": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Entre 25 et 34 ans": {
+            "Gillette": 0,
+            "Wilkinson": 0,
+            "Bic": 0,
+            "Philips": 0,
+            "Je ne me souviens pas": 4,
+            "Carrefour": 0,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 82,
+            "Aucun, je n'achèterais pas ce produit": 15,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Entre 35 et 44 ans": {
+            "Gillette": 5,
+            "Wilkinson": 2,
+            "Bic": 2,
+            "Philips": 0,
+            "Je ne me souviens pas": 0,
+            "Carrefour": 0,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 88,
+            "Aucun, je n'achèterais pas ce produit": 5,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Entre 45 et 54 ans": {
+            "Gillette": 6,
+            "Wilkinson": 3,
+            "Bic": 3,
+            "Philips": 0,
+            "Je ne me souviens pas": 0,
+            "Carrefour": 0,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 91,
+            "Aucun, je n'achèterais pas ce produit": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Plus de 54 ans": {
+            "Gillette": 3,
+            "Wilkinson": 3,
+            "Bic": 3,
+            "Philips": 3,
+            "Je ne me souviens pas": 0,
+            "Carrefour": 3,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 88,
+            "Aucun, je n'achèterais pas ce produit": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Sans enfants": {
+            "Gillette": 4,
+            "Wilkinson": 2,
+            "Bic": 5,
+            "Philips": 2,
+            "Je ne me souviens pas": 0,
+            "Carrefour": 2,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 84,
+            "Aucun, je n'achèterais pas ce produit": 4,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Avec enfant(s)": {
+            "Gillette": 3,
+            "Wilkinson": 2,
+            "Bic": 0,
+            "Philips": 0,
+            "Je ne me souviens pas": 1,
+            "Carrefour": 0,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 90,
+            "Aucun, je n'achèterais pas ce produit": 5,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Nord Est": {
+            "Gillette": 7,
+            "Wilkinson": 0,
+            "Bic": 0,
+            "Philips": 0,
+            "Je ne me souviens pas": 0,
+            "Carrefour": 0,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 87,
+            "Aucun, je n'achèterais pas ce produit": 7,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Nord Ouest": {
+            "Gillette": 0,
+            "Wilkinson": 6,
+            "Bic": 17,
+            "Philips": 0,
+            "Je ne me souviens pas": 6,
+            "Carrefour": 0,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 72,
+            "Aucun, je n'achèterais pas ce produit": 6,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Sud Est": {
+            "Gillette": 0,
+            "Wilkinson": 0,
+            "Bic": 0,
+            "Philips": 0,
+            "Je ne me souviens pas": 0,
+            "Carrefour": 0,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 100,
+            "Aucun, je n'achèterais pas ce produit": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Sud Ouest": {
+            "Gillette": 20,
+            "Wilkinson": 0,
+            "Bic": 0,
+            "Philips": 0,
+            "Je ne me souviens pas": 0,
+            "Carrefour": 0,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 80,
+            "Aucun, je n'achèterais pas ce produit": 0,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          },
+          "Région Parisienne": {
+            "Gillette": 3,
+            "Wilkinson": 3,
+            "Bic": 0,
+            "Philips": 2,
+            "Je ne me souviens pas": 0,
+            "Carrefour": 2,
+            "Aucun, j'ajouterais ce produit à ceux que je consomme habituellement": 87,
+            "Aucun, je n'achèterais pas ce produit": 6,
+            "Autres marques de distributeur": 0,
+            "Autres qui ne sont pas dans cette liste": 0
+          }
+        }
+      },
+      {
+        "question_id": "post_q6",
+        "question_text": "Le produit « Lames de rasoir pour homme Fusion 5 Gillette » - Est nouveau et différent des autres produits de ce type",
+        "responses": {
+          "Tous": {
+            "Pas du tout d'accord": 1,
+            "Plutôt pas d'accord": 4,
+            "Ni d'accord,ni pas d'accord": 29,
+            "Plutôt d'accord": 34,
+            "Tout à fait d'accord": 33
+          },
+          "Homme": {
+            "Pas du tout d'accord": 1,
+            "Plutôt pas d'accord": 4,
+            "Ni d'accord,ni pas d'accord": 29,
+            "Plutôt d'accord": 34,
+            "Tout à fait d'accord": 32
+          },
+          "Femme": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 0,
+            "Tout à fait d'accord": 100
+          },
+          "Entre 18 et 24 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 0,
+            "Tout à fait d'accord": 100
+          },
+          "Entre 25 et 34 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 4,
+            "Ni d'accord,ni pas d'accord": 22,
+            "Plutôt d'accord": 41,
+            "Tout à fait d'accord": 33
+          },
+          "Entre 35 et 44 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 10,
+            "Ni d'accord,ni pas d'accord": 41,
+            "Plutôt d'accord": 21,
+            "Tout à fait d'accord": 29
+          },
+          "Entre 45 et 54 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 19,
+            "Plutôt d'accord": 47,
+            "Tout à fait d'accord": 34
+          },
+          "Plus de 54 ans": {
+            "Pas du tout d'accord": 3,
+            "Plutôt pas d'accord": 3,
+            "Ni d'accord,ni pas d'accord": 30,
+            "Plutôt d'accord": 35,
+            "Tout à fait d'accord": 30
+          },
+          "Sans enfants": {
+            "Pas du tout d'accord": 2,
+            "Plutôt pas d'accord": 4,
+            "Ni d'accord,ni pas d'accord": 29,
+            "Plutôt d'accord": 38,
+            "Tout à fait d'accord": 29
+          },
+          "Avec enfant(s)": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 5,
+            "Ni d'accord,ni pas d'accord": 28,
+            "Plutôt d'accord": 32,
+            "Tout à fait d'accord": 35
+          },
+          "Nord Est": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 33,
+            "Plutôt d'accord": 20,
+            "Tout à fait d'accord": 47
+          },
+          "Nord Ouest": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 6,
+            "Ni d'accord,ni pas d'accord": 28,
+            "Plutôt d'accord": 33,
+            "Tout à fait d'accord": 33
+          },
+          "Sud Est": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 6,
+            "Ni d'accord,ni pas d'accord": 18,
+            "Plutôt d'accord": 44,
+            "Tout à fait d'accord": 32
+          },
+          "Sud Ouest": {
+            "Pas du tout d'accord": 10,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 60,
+            "Plutôt d'accord": 10,
+            "Tout à fait d'accord": 20
+          },
+          "Région Parisienne": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 5,
+            "Ni d'accord,ni pas d'accord": 28,
+            "Plutôt d'accord": 36,
+            "Tout à fait d'accord": 31
+          }
+        }
+      },
+      {
+        "question_id": "post_q7",
+        "question_text": "Le produit « Lames de rasoir pour homme Fusion 5 Gillette » - M'attire particulièrement",
+        "responses": {
+          "Tous": {
+            "Pas du tout d'accord": 1,
+            "Plutôt pas d'accord": 3,
+            "Ni d'accord,ni pas d'accord": 13,
+            "Plutôt d'accord": 41,
+            "Tout à fait d'accord": 43
+          },
+          "Homme": {
+            "Pas du tout d'accord": 1,
+            "Plutôt pas d'accord": 3,
+            "Ni d'accord,ni pas d'accord": 13,
+            "Plutôt d'accord": 41,
+            "Tout à fait d'accord": 43
+          },
+          "Femme": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 100,
+            "Tout à fait d'accord": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 33,
+            "Plutôt d'accord": 0,
+            "Tout à fait d'accord": 67
+          },
+          "Entre 25 et 34 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 19,
+            "Plutôt d'accord": 44,
+            "Tout à fait d'accord": 37
+          },
+          "Entre 35 et 44 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 7,
+            "Ni d'accord,ni pas d'accord": 12,
+            "Plutôt d'accord": 48,
+            "Tout à fait d'accord": 33
+          },
+          "Entre 45 et 54 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 13,
+            "Plutôt d'accord": 44,
+            "Tout à fait d'accord": 44
+          },
+          "Plus de 54 ans": {
+            "Pas du tout d'accord": 3,
+            "Plutôt pas d'accord": 3,
+            "Ni d'accord,ni pas d'accord": 8,
+            "Plutôt d'accord": 33,
+            "Tout à fait d'accord": 55
+          },
+          "Sans enfants": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 2,
+            "Ni d'accord,ni pas d'accord": 14,
+            "Plutôt d'accord": 45,
+            "Tout à fait d'accord": 39
+          },
+          "Avec enfant(s)": {
+            "Pas du tout d'accord": 1,
+            "Plutôt pas d'accord": 3,
+            "Ni d'accord,ni pas d'accord": 11,
+            "Plutôt d'accord": 39,
+            "Tout à fait d'accord": 46
+          },
+          "Nord Est": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 7,
+            "Plutôt d'accord": 40,
+            "Tout à fait d'accord": 53
+          },
+          "Nord Ouest": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 22,
+            "Plutôt d'accord": 39,
+            "Tout à fait d'accord": 39
+          },
+          "Sud Est": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 3,
+            "Ni d'accord,ni pas d'accord": 6,
+            "Plutôt d'accord": 47,
+            "Tout à fait d'accord": 44
+          },
+          "Sud Ouest": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 30,
+            "Tout à fait d'accord": 70
+          },
+          "Région Parisienne": {
+            "Pas du tout d'accord": 2,
+            "Plutôt pas d'accord": 5,
+            "Ni d'accord,ni pas d'accord": 16,
+            "Plutôt d'accord": 40,
+            "Tout à fait d'accord": 37
+          }
+        }
+      },
+      {
+        "question_id": "post_q8",
+        "question_text": "Le produit « Lames de rasoir pour homme Fusion 5 Gillette » - Est proposé par une marque que j'aime",
+        "responses": {
+          "Tous": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 1,
+            "Ni d'accord,ni pas d'accord": 11,
+            "Plutôt d'accord": 35,
+            "Tout à fait d'accord": 53
+          },
+          "Homme": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 1,
+            "Ni d'accord,ni pas d'accord": 11,
+            "Plutôt d'accord": 34,
+            "Tout à fait d'accord": 53
+          },
+          "Femme": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 100,
+            "Tout à fait d'accord": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 67,
+            "Tout à fait d'accord": 33
+          },
+          "Entre 25 et 34 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 19,
+            "Plutôt d'accord": 26,
+            "Tout à fait d'accord": 56
+          },
+          "Entre 35 et 44 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 2,
+            "Ni d'accord,ni pas d'accord": 2,
+            "Plutôt d'accord": 48,
+            "Tout à fait d'accord": 48
+          },
+          "Entre 45 et 54 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 19,
+            "Plutôt d'accord": 34,
+            "Tout à fait d'accord": 47
+          },
+          "Plus de 54 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 3,
+            "Ni d'accord,ni pas d'accord": 10,
+            "Plutôt d'accord": 25,
+            "Tout à fait d'accord": 63
+          },
+          "Sans enfants": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 2,
+            "Ni d'accord,ni pas d'accord": 18,
+            "Plutôt d'accord": 32,
+            "Tout à fait d'accord": 48
+          },
+          "Avec enfant(s)": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 1,
+            "Ni d'accord,ni pas d'accord": 7,
+            "Plutôt d'accord": 36,
+            "Tout à fait d'accord": 56
+          },
+          "Nord Est": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 20,
+            "Tout à fait d'accord": 80
+          },
+          "Nord Ouest": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 28,
+            "Plutôt d'accord": 28,
+            "Tout à fait d'accord": 44
+          },
+          "Sud Est": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 6,
+            "Plutôt d'accord": 38,
+            "Tout à fait d'accord": 56
+          },
+          "Sud Ouest": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 30,
+            "Tout à fait d'accord": 70
+          },
+          "Région Parisienne": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 3,
+            "Ni d'accord,ni pas d'accord": 13,
+            "Plutôt d'accord": 39,
+            "Tout à fait d'accord": 45
+          }
+        }
+      },
+      {
+        "question_id": "post_q9",
+        "question_text": "Le produit « Lames de rasoir pour homme Fusion 5 Gillette » - Est un produit que je serais prêt(e) à payer un peu plus cher",
+        "responses": {
+          "Tous": {
+            "Pas du tout d'accord": 6,
+            "Plutôt pas d'accord": 10,
+            "Ni d'accord,ni pas d'accord": 35,
+            "Plutôt d'accord": 19,
+            "Tout à fait d'accord": 31
+          },
+          "Homme": {
+            "Pas du tout d'accord": 6,
+            "Plutôt pas d'accord": 10,
+            "Ni d'accord,ni pas d'accord": 35,
+            "Plutôt d'accord": 19,
+            "Tout à fait d'accord": 31
+          },
+          "Femme": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 100,
+            "Tout à fait d'accord": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 0,
+            "Tout à fait d'accord": 100
+          },
+          "Entre 25 et 34 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 7,
+            "Ni d'accord,ni pas d'accord": 30,
+            "Plutôt d'accord": 19,
+            "Tout à fait d'accord": 44
+          },
+          "Entre 35 et 44 ans": {
+            "Pas du tout d'accord": 7,
+            "Plutôt pas d'accord": 17,
+            "Ni d'accord,ni pas d'accord": 29,
+            "Plutôt d'accord": 17,
+            "Tout à fait d'accord": 31
+          },
+          "Entre 45 et 54 ans": {
+            "Pas du tout d'accord": 9,
+            "Plutôt pas d'accord": 3,
+            "Ni d'accord,ni pas d'accord": 44,
+            "Plutôt d'accord": 22,
+            "Tout à fait d'accord": 22
+          },
+          "Plus de 54 ans": {
+            "Pas du tout d'accord": 5,
+            "Plutôt pas d'accord": 10,
+            "Ni d'accord,ni pas d'accord": 40,
+            "Plutôt d'accord": 23,
+            "Tout à fait d'accord": 23
+          },
+          "Sans enfants": {
+            "Pas du tout d'accord": 4,
+            "Plutôt pas d'accord": 13,
+            "Ni d'accord,ni pas d'accord": 46,
+            "Plutôt d'accord": 11,
+            "Tout à fait d'accord": 27
+          },
+          "Avec enfant(s)": {
+            "Pas du tout d'accord": 7,
+            "Plutôt pas d'accord": 8,
+            "Ni d'accord,ni pas d'accord": 27,
+            "Plutôt d'accord": 25,
+            "Tout à fait d'accord": 33
+          },
+          "Nord Est": {
+            "Pas du tout d'accord": 7,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 33,
+            "Plutôt d'accord": 33,
+            "Tout à fait d'accord": 27
+          },
+          "Nord Ouest": {
+            "Pas du tout d'accord": 11,
+            "Plutôt pas d'accord": 6,
+            "Ni d'accord,ni pas d'accord": 50,
+            "Plutôt d'accord": 22,
+            "Tout à fait d'accord": 11
+          },
+          "Sud Est": {
+            "Pas du tout d'accord": 3,
+            "Plutôt pas d'accord": 9,
+            "Ni d'accord,ni pas d'accord": 29,
+            "Plutôt d'accord": 15,
+            "Tout à fait d'accord": 44
+          },
+          "Sud Ouest": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 60,
+            "Plutôt d'accord": 30,
+            "Tout à fait d'accord": 10
+          },
+          "Région Parisienne": {
+            "Pas du tout d'accord": 6,
+            "Plutôt pas d'accord": 15,
+            "Ni d'accord,ni pas d'accord": 30,
+            "Plutôt d'accord": 16,
+            "Tout à fait d'accord": 33
+          }
+        }
+      },
+      {
+        "question_id": "post_q10",
+        "question_text": "Le produit « Lames de rasoir pour homme Fusion 5 Gillette » - Est de grande qualité",
+        "responses": {
+          "Tous": {
+            "Pas du tout d'accord": 1,
+            "Plutôt pas d'accord": 2,
+            "Ni d'accord,ni pas d'accord": 12,
+            "Plutôt d'accord": 35,
+            "Tout à fait d'accord": 51
+          },
+          "Homme": {
+            "Pas du tout d'accord": 1,
+            "Plutôt pas d'accord": 2,
+            "Ni d'accord,ni pas d'accord": 12,
+            "Plutôt d'accord": 34,
+            "Tout à fait d'accord": 51
+          },
+          "Femme": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 100,
+            "Tout à fait d'accord": 0
+          },
+          "Entre 18 et 24 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 0,
+            "Plutôt d'accord": 67,
+            "Tout à fait d'accord": 33
+          },
+          "Entre 25 et 34 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 7,
+            "Ni d'accord,ni pas d'accord": 11,
+            "Plutôt d'accord": 22,
+            "Tout à fait d'accord": 59
+          },
+          "Entre 35 et 44 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 2,
+            "Ni d'accord,ni pas d'accord": 12,
+            "Plutôt d'accord": 43,
+            "Tout à fait d'accord": 43
+          },
+          "Entre 45 et 54 ans": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 16,
+            "Plutôt d'accord": 31,
+            "Tout à fait d'accord": 53
+          },
+          "Plus de 54 ans": {
+            "Pas du tout d'accord": 3,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 10,
+            "Plutôt d'accord": 35,
+            "Tout à fait d'accord": 53
+          },
+          "Sans enfants": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 18,
+            "Plutôt d'accord": 34,
+            "Tout à fait d'accord": 48
+          },
+          "Avec enfant(s)": {
+            "Pas du tout d'accord": 1,
+            "Plutôt pas d'accord": 3,
+            "Ni d'accord,ni pas d'accord": 8,
+            "Plutôt d'accord": 35,
+            "Tout à fait d'accord": 52
+          },
+          "Nord Est": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 7,
+            "Plutôt d'accord": 33,
+            "Tout à fait d'accord": 60
+          },
+          "Nord Ouest": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0,
+            "Ni d'accord,ni pas d'accord": 22,
+            "Plutôt d'accord": 39,
+            "Tout à fait d'accord": 39
+          },
+          "Sud Est": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 3,
+            "Ni d'accord,ni pas d'accord": 3,
+            "Plutôt d'accord": 35,
+            "Tout à fait d'accord": 59
+          },
+          "Sud Ouest": {
+            "Pas du tout d'accord": 0,
+            "Plutôt pas d'accord": 0
+          }
+        }
+      }
+    ]
+  },
+  "qualitative": {
+    "strengths": [
+      "Beaucoup apprécient le glissement doux des lames, contribuant à une expérience de rasage impeccable et confortable",
+      "Les lames sont douces pour la peau, assurant une sensation agréable et prévenant les irritations ou les coupures",
+      "Les lames sont reconnues pour leur durabilité et leurs performances durables, avec une tondeuse de précision utile pour les contours",
+      "Le produit offre une excellente qualité et une performance de rasage très efficace",
+      "Les utilisateurs louent constamment les lames pour offrir un rasage de très près et précis, souvent en un seul passage"
+    ],
+    "improvements": [
+      "De nombreux clients trouvent le produit cher, notant que le prix est souvent trop élevé et continue d'augmenter",
+      "Le système à cinq lames est jugé trop large, ce qui peut nuire à la précision et à la flexibilité dans les zones délicates comme sous la mâchoire"
+    ],
+    "sentiment": {
+      "very_positive": 73.7,
+      "positive": 17.2,
+      "neutral": 2.5,
+      "negative": 1.0,
+      "very_negative": 0.0
+    },
+    "top_keywords": [
+      "PRODUIT",
+      "GLOBAL",
+      "EFFICACITÉ",
+      "QUALITÉ DU PRODUIT",
+      "SENSATION",
+      "MARQUE",
+      "UTILISABILITÉ",
+      "PRIX",
+      "COMPOSITION",
+      "APPLICATION",
+      "EMBALLAGE"
+    ]
+  },
+  "product_attributes": {
+    "organoleptiques": {
+      "nettete_resultat": {
+        "tous": {
+          "tres_bien": 55,
+          "bien": 36,
+          "ni_bien_ni_mal": 8,
+          "pas_bien": 1,
+          "pas_bien_du_tout": 0
+        },
+        "homme": {
+          "tres_bien": 55,
+          "bien": 36,
+          "ni_bien_ni_mal": 8,
+          "pas_bien": 1,
+          "pas_bien_du_tout": 0
+        },
+        "femme": {
+          "tres_bien": 0,
+          "bien": 0,
+          "ni_bien_ni_mal": 100,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "18_24": {
+          "tres_bien": 67,
+          "bien": 33,
+          "ni_bien_ni_mal": 0,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "25_34": {
+          "tres_bien": 52,
+          "bien": 33,
+          "ni_bien_ni_mal": 15,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "35_44": {
+          "tres_bien": 43,
+          "bien": 43,
+          "ni_bien_ni_mal": 14,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "45_54": {
+          "tres_bien": 59,
+          "bien": 41,
+          "ni_bien_ni_mal": 0,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "plus_54": {
+          "tres_bien": 65,
+          "bien": 28,
+          "ni_bien_ni_mal": 5,
+          "pas_bien": 3,
+          "pas_bien_du_tout": 0
+        },
+        "sans_enfants": {
+          "tres_bien": 52,
+          "bien": 41,
+          "ni_bien_ni_mal": 7,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "avec_enfants": {
+          "tres_bien": 57,
+          "bien": 33,
+          "ni_bien_ni_mal": 9,
+          "pas_bien": 1,
+          "pas_bien_du_tout": 0
+        }
+      },
+      "precision_rasage": {
+        "tous": {
+          "tres_bien": 53,
+          "bien": 40,
+          "ni_bien_ni_mal": 5,
+          "pas_bien": 1,
+          "pas_bien_du_tout": 1
+        },
+        "homme": {
+          "tres_bien": 53,
+          "bien": 41,
+          "ni_bien_ni_mal": 5,
+          "pas_bien": 1,
+          "pas_bien_du_tout": 1
+        },
+        "femme": {
+          "tres_bien": 0,
+          "bien": 0,
+          "ni_bien_ni_mal": 0,
+          "pas_bien": 100,
+          "pas_bien_du_tout": 0
+        },
+        "18_24": {
+          "tres_bien": 67,
+          "bien": 0,
+          "ni_bien_ni_mal": 33,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "25_34": {
+          "tres_bien": 52,
+          "bien": 30,
+          "ni_bien_ni_mal": 7,
+          "pas_bien": 7,
+          "pas_bien_du_tout": 4
+        },
+        "35_44": {
+          "tres_bien": 43,
+          "bien": 52,
+          "ni_bien_ni_mal": 5,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "45_54": {
+          "tres_bien": 56,
+          "bien": 44,
+          "ni_bien_ni_mal": 0,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "plus_54": {
+          "tres_bien": 60,
+          "bien": 35,
+          "ni_bien_ni_mal": 5,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "sans_enfants": {
+          "tres_bien": 55,
+          "bien": 38,
+          "ni_bien_ni_mal": 5,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 2
+        },
+        "avec_enfants": {
+          "tres_bien": 51,
+          "bien": 42,
+          "ni_bien_ni_mal": 5,
+          "pas_bien": 2,
+          "pas_bien_du_tout": 0
+        }
+      },
+      "confort_peau": {
+        "tous": {
+          "tres_bien": 54,
+          "bien": 41,
+          "ni_bien_ni_mal": 5,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "homme": {
+          "tres_bien": 55,
+          "bien": 41,
+          "ni_bien_ni_mal": 5,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "femme": {
+          "tres_bien": 0,
+          "bien": 100,
+          "ni_bien_ni_mal": 0,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "18_24": {
+          "tres_bien": 33,
+          "bien": 67,
+          "ni_bien_ni_mal": 0,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "25_34": {
+          "tres_bien": 52,
+          "bien": 37,
+          "ni_bien_ni_mal": 11,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "35_44": {
+          "tres_bien": 43,
+          "bien": 50,
+          "ni_bien_ni_mal": 7,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "45_54": {
+          "tres_bien": 56,
+          "bien": 44,
+          "ni_bien_ni_mal": 0,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "plus_54": {
+          "tres_bien": 68,
+          "bien": 30,
+          "ni_bien_ni_mal": 3,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "sans_enfants": {
+          "tres_bien": 50,
+          "bien": 48,
+          "ni_bien_ni_mal": 2,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "avec_enfants": {
+          "tres_bien": 57,
+          "bien": 36,
+          "ni_bien_ni_mal": 7,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        }
+      },
+      "efficacite_globale": {
+        "tous": {
+          "tres_bien": 55,
+          "bien": 35,
+          "ni_bien_ni_mal": 8,
+          "pas_bien": 1,
+          "pas_bien_du_tout": 0
+        },
+        "homme": {
+          "tres_bien": 55,
+          "bien": 36,
+          "ni_bien_ni_mal": 8,
+          "pas_bien": 1,
+          "pas_bien_du_tout": 0
+        },
+        "femme": {
+          "tres_bien": 100,
+          "bien": 0,
+          "ni_bien_ni_mal": 0,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "18_24": {
+          "tres_bien": 67,
+          "bien": 0,
+          "ni_bien_ni_mal": 33,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "25_34": {
+          "tres_bien": 63,
+          "bien": 22,
+          "ni_bien_ni_mal": 15,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "35_44": {
+          "tres_bien": 38,
+          "bien": 50,
+          "ni_bien_ni_mal": 10,
+          "pas_bien": 2,
+          "pas_bien_du_tout": 0
+        },
+        "45_54": {
+          "tres_bien": 59,
+          "bien": 38,
+          "ni_bien_ni_mal": 3,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "plus_54": {
+          "tres_bien": 63,
+          "bien": 30,
+          "ni_bien_ni_mal": 5,
+          "pas_bien": 3,
+          "pas_bien_du_tout": 0
+        },
+        "sans_enfants": {
+          "tres_bien": 52,
+          "bien": 36,
+          "ni_bien_ni_mal": 13,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "avec_enfants": {
+          "tres_bien": 57,
+          "bien": 35,
+          "ni_bien_ni_mal": 6,
+          "pas_bien": 2,
+          "pas_bien_du_tout": 0
+        }
+      },
+      "duree_vie": {
+        "tous": {
+          "tres_bien": 43,
+          "bien": 41,
+          "ni_bien_ni_mal": 15,
+          "pas_bien": 1,
+          "pas_bien_du_tout": 1
+        },
+        "homme": {
+          "tres_bien": 43,
+          "bien": 41,
+          "ni_bien_ni_mal": 14,
+          "pas_bien": 1,
+          "pas_bien_du_tout": 1
+        },
+        "femme": {
+          "tres_bien": 0,
+          "bien": 0,
+          "ni_bien_ni_mal": 100,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "18_24": {
+          "tres_bien": 33,
+          "bien": 33,
+          "ni_bien_ni_mal": 33,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "25_34": {
+          "tres_bien": 44,
+          "bien": 33,
+          "ni_bien_ni_mal": 22,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "35_44": {
+          "tres_bien": 38,
+          "bien": 45,
+          "ni_bien_ni_mal": 17,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "45_54": {
+          "tres_bien": 41,
+          "bien": 50,
+          "ni_bien_ni_mal": 6,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 3
+        },
+        "plus_54": {
+          "tres_bien": 50,
+          "bien": 35,
+          "ni_bien_ni_mal": 13,
+          "pas_bien": 3,
+          "pas_bien_du_tout": 0
+        },
+        "sans_enfants": {
+          "tres_bien": 39,
+          "bien": 46,
+          "ni_bien_ni_mal": 13,
+          "pas_bien": 2,
+          "pas_bien_du_tout": 0
+        },
+        "avec_enfants": {
+          "tres_bien": 46,
+          "bien": 38,
+          "ni_bien_ni_mal": 16,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 1
+        }
+      }
+    },
+    "packaging_attrs": {
+      "attrait_emballage": {
+        "tous": {
+          "tres_bien": 41,
+          "bien": 44,
+          "ni_bien_ni_mal": 15,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "homme": {
+          "tres_bien": 41,
+          "bien": 44,
+          "ni_bien_ni_mal": 15,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "femme": {
+          "tres_bien": 100,
+          "bien": 0,
+          "ni_bien_ni_mal": 0,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "18_24": {
+          "tres_bien": 67,
+          "bien": 0,
+          "ni_bien_ni_mal": 33,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "25_34": {
+          "tres_bien": 52,
+          "bien": 33,
+          "ni_bien_ni_mal": 15,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "35_44": {
+          "tres_bien": 31,
+          "bien": 57,
+          "ni_bien_ni_mal": 12,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "45_54": {
+          "tres_bien": 50,
+          "bien": 38,
+          "ni_bien_ni_mal": 13,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "plus_54": {
+          "tres_bien": 35,
+          "bien": 45,
+          "ni_bien_ni_mal": 20,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "sans_enfants": {
+          "tres_bien": 29,
+          "bien": 48,
+          "ni_bien_ni_mal": 23,
+          "pas_bien": 0,
+          "pas_bien_du_tout": 0
+        },
+        "avec_enfants": {
+          "tres_bien": ""
+        }
+      }
+    }
+  }
+}

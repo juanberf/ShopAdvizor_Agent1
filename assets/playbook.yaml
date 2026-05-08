@@ -1,0 +1,490 @@
+# ============================================================
+# ShopAdvizor Reporting Agent — Research Playbook
+# ============================================================
+# Este playbook define los criterios analíticos que usa SA4
+# para interpretar los datos de campaña y generar conclusiones.
+# ============================================================
+
+version: "1.0"
+last_updated: "2026-04-29"
+
+# ============================================================
+# 1. KPIs PRINCIPALES Y SU INTERPRETACIÓN
+# ============================================================
+
+kpis:
+
+  contexto_general: >
+    Todos los KPIs se dividen en quintiles — posición relativa dentro
+    de la categoría. Quintil 5 = top, quintil 1 = bottom. En Francia,
+    productos en quintil 5 tienen tasa de supervivencia del 84% vs.
+    5% del quintil 1.
+
+  saz_score:
+    que_mide: >
+      Mide el atractivo intrínseco del producto, independiente de la
+      ejecución de marketing. Es el indicador sintético principal de
+      la campaña.
+    como_se_calcula: >
+      Índice que integra Rating, NPS e Intención de compra.
+    escala:
+      - rango: "≥ 70"
+        interpretacion: "Excelente potencial de venta"
+      - rango: "55–69"
+        interpretacion: "Muy bien"
+      - rango: "45–54"
+        interpretacion: "Medio"
+      - rango: "35–44"
+        interpretacion: "Malo"
+      - rango: "< 35"
+        interpretacion: "Muy malo"
+    lectura_benchmark: >
+      Los colores no reflejan el valor absoluto sino la posición
+      relativa frente a los competidores de la misma categoría. Un
+      score alto puede aparecer en rojo si la mayoría de los
+      competidores tienen scores superiores. Leer siempre el color
+      junto con la posición en el ranking, no de forma aislada.
+
+  rating:
+    que_mide: >
+      La satisfacción global con el producto tras probarlo.
+    como_se_calcula: >
+      Media aritmética de las notas de 1 a 5 estrellas dadas en la
+      post-evaluación.
+    escala:
+      - rango: "≥ 4,5"
+        interpretacion: "Excelente satisfacción"
+      - rango: "4,0–4,49"
+        interpretacion: "Muy buena satisfacción"
+      - rango: "3,5–3,99"
+        interpretacion: "Satisfacción media"
+      - rango: "3,0–3,49"
+        interpretacion: "Satisfacción baja"
+      - rango: "< 3,0"
+        interpretacion: "Insatisfacción"
+    lectura_benchmark: >
+      Comparar con el máximo, media y mínimo de la categoría. Una
+      diferencia de más de 0,2 puntos respecto a la media categorial
+      se considera relevante.
+
+  nps:
+    que_mide: >
+      La predisposición a recomendar el producto. Indica la fuerza
+      del boca a boca potencial.
+    como_se_calcula: >
+      A partir de la pregunta post-evaluación sobre recomendación
+      (escala 0–10). Promotores = 9–10 / Pasivos = 7–8 /
+      Detractores = 0–6. NPS = % Promotores − % Detractores.
+      Rango: −100 a +100.
+    escala:
+      - rango: "≥ 50"
+        interpretacion: "Excelente, alto potencial de recomendación"
+      - rango: "30–49"
+        interpretacion: "Muy bien"
+      - rango: "10–29"
+        interpretacion: "Positivo pero moderado"
+      - rango: "0–9"
+        interpretacion: "Neutral"
+      - rango: "< 0"
+        interpretacion: "Más detractores que promotores — señal de alerta"
+    lectura_benchmark: >
+      Comparar siempre con el máximo, media y mínimo de la categoría.
+      Un NPS de 30 puede ser excelente en una categoría con media de
+      15, o mediocre con media de 45.
+
+  intencion_compra:
+    que_mide: >
+      El porcentaje de consumidores que compraría el producto con
+      certeza tras probarlo, sin conocer el precio.
+    como_se_calcula: >
+      Porcentaje de respuestas Top Box en la post-evaluación de
+      intención sin precio. No incluye 'probablemente lo compraría'.
+    lectura_benchmark: >
+      Es el KPI más variable por categoría. Interpretar siempre en
+      relación al máximo de la categoría.
+
+  sensibilidad_precio:
+    que_mide: >
+      El impacto negativo de revelar el precio real sobre la intención
+      de compra. Valores negativos indican que el precio frena la
+      compra.
+    como_se_calcula: >
+      Diferencial entre el índice de intención con precio y sin precio
+      (con ponderación interna de Shopadvizor).
+      Fórmula: Intención con precio − Intención sin precio.
+    lectura_benchmark: >
+      Requiere contexto categorial obligatorio. Una sensibilidad de
+      −20 puede ser la norma en categorías premium o una señal
+      crítica en gran consumo básico. Comparar siempre con el mínimo
+      de la categoría.
+
+  notoriedad:
+    que_mide: >
+      El porcentaje de consumidores que ya conocían el producto antes
+      de encontrarlo en la plataforma.
+    como_se_calcula: >
+      100 − % de respuestas indicando que no habían visto el producto
+      antes.
+    umbrales_referencia:
+      baja: "< 20%"
+      media: "20–35%"
+      alta: "> 35%"
+    lectura_benchmark: >
+      No es un KPI a maximizar en todos los casos — la plataforma
+      está pensada también para descubrimiento. Interpretar en
+      relación al tipo de producto (lanzamiento vs. consolidado) y
+      a la media de la categoría.
+
+  innovacion:
+    que_mide: >
+      La percepción de originalidad y diferenciación del producto
+      frente a otros de la misma categoría.
+    como_se_calcula: >
+      Porcentaje Top 2 Box a la pregunta post-evaluación sobre
+      novedad y diferenciación del producto.
+    umbrales_referencia:
+      baja: "< 50%"
+      media: "50–70%"
+      alta: "> 70%"
+    lectura_benchmark: >
+      Categorías maduras tienden a tener medias de innovación más
+      bajas. Contextualizar antes de concluir que un valor es
+      insuficiente.
+
+  emballage:
+    que_mide: >
+      La valoración del envase en aspectos estéticos, funcionales,
+      de durabilidad y percepción de valor.
+    como_se_calcula: >
+      Media de la nota 0–10 a la pregunta post-evaluación sobre
+      valoración del embalaje.
+    escala:
+      - rango: "≥ 8,5"
+        interpretacion: "Packaging excelente"
+      - rango: "7,5–8,49"
+        interpretacion: "Muy bueno"
+      - rango: "6,5–7,49"
+        interpretacion: "Aceptable"
+      - rango: "< 6,5"
+        interpretacion: "Packaging mejorable"
+    lectura_benchmark: >
+      Un packaging bien valorado en absoluto puede estar en posición
+      media si los competidores también tienen packagings fuertes.
+
+
+# ============================================================
+# 2. REGLAS DE CRUCE
+# ============================================================
+
+reglas_de_cruce:
+
+  - id: "2.1"
+    nombre: "SAZ Score vs. posición en ranking categorial"
+    descripcion: >
+      El SAZ Score solo tiene significado real en contexto
+      competitivo. Cruzar siempre el valor absoluto con la posición
+      en el ranking y los estadísticos de la categoría (máximo,
+      media, mínimo). Un SAZ de 56 en posición 7/40 no es lo mismo
+      que un SAZ de 56 en posición 1/10.
+
+  - id: "2.2"
+    nombre: "Intención de compra vs. Sensibilidad al precio"
+    descripcion: >
+      Siempre que la intención sin precio sea alta pero la
+      sensibilidad al precio sea fuerte, señalar como tensión
+      producto-precio: el producto gusta, pero el precio es una
+      barrera para la conversión.
+
+  - id: "2.3"
+    nombre: "NPS vs. Rating"
+    descripcion: >
+      En condiciones normales ambos se mueven de forma coherente.
+      Si hay divergencia significativa (ej: Rating ≥ 4,3 con
+      NPS < 20), investigar los comentarios: suele indicar que el
+      producto satisface pero no entusiasma lo suficiente para
+      recomendar, o que un factor externo (precio, competencia)
+      frena la recomendación.
+
+  - id: "2.4"
+    nombre: "Atributos pre-test vs. post-test"
+    descripcion: >
+      Calcular el diferencial para cada atributo. Destacar los que
+      tienen salto positivo alto (≥ 15 puntos) — el producto supera
+      expectativas — y los que tienen diferencial negativo o
+      estancado — el producto no confirma lo que promete.
+
+  - id: "2.5"
+    nombre: "Intención de compra vs. Fidelidad de marca"
+    descripcion: >
+      Si la intención de compra es alta pero la tasa de fidelidad
+      a la marca es baja, el potencial de captación es real pero la
+      retención no está garantizada. Señalar esta combinación como
+      oportunidad frágil.
+
+  - id: "2.6"
+    nombre: "Notoriedad vs. razones de elección del producto"
+    descripcion: >
+      Si la notoriedad es baja pero el porcentaje de elección por
+      la marca es alto, puede indicar que los consumidores conocían
+      la marca pero no este producto concreto. Dato relevante para
+      estrategia de lanzamiento.
+
+  - id: "2.7"
+    nombre: "Marca vs. producto (visibilidad de SKU)"
+    descripcion: >
+      Comparar la cuota de mercado de la marca con la notoriedad
+      del producto específico. Si la marca tiene alta presencia pero
+      el producto tiene notoriedad baja, el problema es de
+      visibilidad del SKU concreto, no de branding.
+
+  - id: "2.8"
+    nombre: "Cruces sociodemográficos significativos"
+    descripcion: >
+      Los porcentajes marcados en rojo y verde en el Excel indican
+      diferencias estadísticamente significativas entre segmentos.
+      Tratarlos como insights accionables, no como ruido.
+
+  - id: "2.9"
+    nombre: "NPS de marca vs. NPS de producto"
+    descripcion: >
+      Cuando estén disponibles, comparar ambos niveles. Si el NPS
+      del producto es significativamente inferior al de la marca,
+      el producto arrastra la percepción general. Si es superior,
+      el producto es un activo de marca.
+
+  - id: "2.10"
+    nombre: "Robo de mercado (Share of Wallet)"
+    descripcion: >
+      Cruzar la Marca Habitual del pre-test con la pregunta
+      post-test sobre qué marca dejarían de comprar para comprar
+      este producto. Permite estimar de dónde vendría la ganancia
+      de clientes.
+
+  - id: "2.11"
+    nombre: "Composición de la muestra vs. target declarado"
+    descripcion: >
+      Verificar si el perfil sociodemográfico de los testeadores
+      coincide con el target del producto. Si hay desajuste
+      relevante, contextualizar las conclusiones explícitamente.
+
+
+# ============================================================
+# 3. PATRONES A DETECTAR
+# ============================================================
+
+patrones:
+
+  - id: "3.1"
+    nombre: "Producto estrella"
+    condiciones:
+      - "Rating ≥ 4,3"
+      - "NPS ≥ 50"
+      - "Intención de compra ≥ 35%"
+      - "SAZ Score en top 3 de categoría"
+    conclusion: "Alto potencial de venta y recomendación."
+
+  - id: "3.2"
+    nombre: "Brecha precio-producto"
+    condiciones:
+      - "Rating alto"
+      - "Intención sin precio alta"
+      - "Sensibilidad precio ≤ −20"
+      - "Comentarios que mencionan precio"
+    conclusion: >
+      El producto convence, pero el precio frena la conversión.
+
+  - id: "3.3"
+    nombre: "Producto que decepciona tras el test"
+    condiciones:
+      - "Atributos post-test inferiores al pre-test en ≥ 2 dimensiones clave"
+      - "Rating < 3,8"
+      - "NPS bajo"
+    conclusion: >
+      El producto genera expectativas que no cumple una vez probado.
+
+  - id: "3.4"
+    nombre: "Producto de nicho con alta satisfacción"
+    condiciones:
+      - "Rating ≥ 4,2"
+      - "NPS positivo"
+      - "Notoriedad < 20%"
+      - "Intención de compra 15–25%"
+      - "Perfil demográfico concentrado"
+    conclusion: >
+      Fuerte en target core pero débil en captura. Optimizar para
+      fidelización, no para reclutamiento.
+
+  - id: "3.5"
+    nombre: "Packaging como palanca"
+    condiciones:
+      - "Emballage ≥ 8,5"
+      - "Top 3 en ranking de packaging"
+      - "Atributos organolépticos medios o bajos"
+    conclusion: >
+      El envase es el punto fuerte pero el producto no acompaña.
+      Riesgo de compra por impulso con baja repetición.
+
+  - id: "3.6"
+    nombre: "Riesgo de abandono de marca"
+    condiciones:
+      - "Fidelidad < 35%"
+      - "Alta proporción de 'elijo otra variedad de la misma marca'"
+    conclusion: >
+      Lealtad a la marca, pero no al producto. Posible
+      canibalización interna del portfolio.
+
+  - id: "3.7"
+    nombre: "Marca fuerte, producto desconocido"
+    condiciones:
+      - "Marca con alta cuota en Marques Achetées"
+      - "Notoriedad del producto < 20%"
+    conclusion: >
+      Invertir en visibilidad del SKU, no en comunicación de marca.
+
+  - id: "3.8"
+    nombre: "Innovación percibida alta, conversión moderada"
+    condiciones:
+      - "Innovación ≥ 70%"
+      - "Intención de compra < 25%"
+    conclusion: >
+      Curiosidad sin conversión. Problema de barrera de prueba
+      o de precio.
+
+  - id: "3.9"
+    nombre: "Alta calidad, baja relación calidad-precio"
+    condiciones:
+      - "Rating de calidad ≥ 4,2"
+      - "Rating de calidad-precio ≤ 3,5"
+      - "Sensibilidad precio negativa"
+    conclusion: >
+      El producto se considera bueno pero caro. Revisar pricing
+      o reforzar comunicación de valor.
+
+  - id: "3.10"
+    nombre: "Expectativa alta, experiencia que no supera"
+    condiciones:
+      - "Atributos pre-test Top 2 Box ≥ 70% en ≥ 3 dimensiones"
+      - "Diferencial pre/post < 5 puntos"
+      - "Rating entre 3,8 y 4,1"
+    conclusion: >
+      El producto cumple sin sorprender. Sin elemento de deleite
+      que impulse recomendación espontánea.
+
+  - id: "3.11"
+    nombre: "Precio como palanca positiva"
+    condiciones:
+      - "Rating alto"
+      - "Sensibilidad precio positiva o neutra"
+    conclusion: >
+      Destacar relación calidad-precio en comunicación.
+
+
+# ============================================================
+# 4. REGLAS DE PRUDENCIA
+# ============================================================
+
+reglas_de_prudencia:
+
+  - id: "4.1"
+    titulo: "Regla del N mínimo"
+    descripcion: >
+      Ignorar cualquier segmento demográfico con menos de 10
+      personas en total. No extraer conclusiones por segmento
+      cuando la base es inferior a este umbral. Indicar
+      explícitamente cuando se trabaja con una submuestra reducida.
+
+  - id: "4.2"
+    titulo: "Los colores benchmark no son verdades absolutas"
+    descripcion: >
+      Un KPI en rojo no significa que el producto sea malo en
+      términos absolutos: puede ser bueno pero estar en una
+      categoría muy competitiva. Siempre acompañar el color con
+      el valor absoluto y una referencia relativa (quintil o
+      posición alta/media/baja en la categoría).
+
+  - id: "4.3"
+    titulo: "El MAS IMPORTANTE - No mencionar posiciones exactas en el ranking"
+    descripcion: >
+      No indicar la posición numérica exacta del producto en el
+      ranking de la categoría (ej: no decir '#2 de 33' ni
+      'posición 4 de 19'). Usar siempre referencias relativas:
+      'parte alta de la categoría', 'por encima de la media',
+      'en el tramo superior', 'entre los mejores de la categoría'.
+      Esta regla aplica tanto al one-pager como al modo
+      conversacional.
+
+  - id: "4.4"
+    titulo: "El SAZ Score no predice ventas reales"
+    descripcion: >
+      El SAZ Score predice potencial de venta en condiciones de
+      test, no ventas reales en tienda. Factores como distribución,
+      visibilidad en lineal o promociones no están capturados. No
+      usar expresiones como 'este producto venderá bien' sino
+      'este producto tiene alto potencial de venta según los
+      resultados del test'.
+
+  - id: "4.5"
+    titulo: "Las diferencias pre/post solo son válidas para el mismo grupo"
+    descripcion: >
+      Los datos pre y post del Excel corresponden a los mismos
+      consumidores, lo que permite comparación válida. No comparar
+      los resultados post de una campaña con los pre de otra
+      campaña distinta como si fueran equivalentes.
+
+  - id: "4.6"
+    titulo: "La intención de compra se mide en condiciones de prueba gratuita"
+    descripcion: >
+      Todos los participantes han recibido el producto gratis. Esto
+      puede inflar ligeramente la intención de compra y el NPS
+      respecto a una compra real. Tener esto especialmente presente
+      cuando la sensibilidad al precio es alta.
+
+  - id: "4.7"
+    titulo: "Los avis reflejan una muestra autoseleccionada"
+    descripcion: >
+      Los participantes eligieron probar el producto por alguna
+      razón (marca, tipo de producto, curiosidad), lo que puede
+      sesgar los resultados positivamente. No generalizar los
+      resultados como representativos de todo el mercado.
+
+  - id: "4.8"
+    titulo: "No concluir causalidad desde correlación"
+    descripcion: >
+      El agente puede señalar relaciones entre KPIs pero debe
+      evitar afirmaciones causales que los datos no permiten
+      sostener.
+
+  - id: "4.9"
+    titulo: "No mencionar competidores por nombre"
+    descripcion: >
+      No nombrar productos o marcas competidoras específicas en
+      las conclusiones, aunque aparezcan en el ranking del
+      dashboard.
+
+  - id: "4.10"
+    titulo: "No predecir ventas ni cuotas de mercado"
+    descripcion: >
+      Ningún KPI del estudio permite inferir cifras de ventas
+      reales. Limitarse a hablar de potencial, intención y
+      posicionamiento relativo.
+
+  - id: "4.11"
+    titulo: "Siempre citar la fuente del dato"
+    descripcion: >
+      Cada conclusión debe poder asociarse a su origen: número de
+      respondents, fecha de campaña y si el benchmark utilizado
+      es el de la categoría completa o un subconjunto.
+
+  - id: "4.12"
+    titulo: "Dato no disponible"
+    descripcion: >
+      Si un dato no aparece en los inputs proporcionados, indicarlo
+      explícitamente como 'no disponible en el estudio'. Nunca
+      inferir, estimar ni completar datos ausentes.
+
+  - id: "4.13"
+    titulo: "Lenguaje para puntos débiles"
+    descripcion: >
+      No usar términos como 'fracaso', 'rechazo' o 'desastre'.
+      Los puntos débiles se formulan siempre como 'áreas de
+      fricción' u 'oportunidades de mejora'.
