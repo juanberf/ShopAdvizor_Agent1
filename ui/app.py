@@ -263,9 +263,18 @@ elif st.session_state.stage == "results":
 
     # Warnings si los hay
     warnings = result.get("warnings", [])
-    if warnings:
-        with st.expander(f"⚠️ {len(warnings)} advertencia(s) en los datos"):
-            for w in warnings:
+    user_facing_warnings = [
+        w for w in warnings
+        if not any(skip in w for skip in [
+            "qualitative.improvements",
+            "qualitative.strengths",
+            "qualitative.sentiment",
+            "Segmentos solo en",
+        ])
+    ]
+    if user_facing_warnings:
+        with st.expander(f"⚠️ {len(user_facing_warnings)} advertencia(s) en los datos"):
+            for w in user_facing_warnings:
                 st.markdown(f"- {w}")
 
     st.markdown("---")
