@@ -30,6 +30,14 @@ REGLAS ABSOLUTAS — NUNCA SE PUEDEN INCUMPLIR:
 - En lugar de posiciones usa siempre: 'parte alta de la categoría', 'por encima de la media',
   'entre los mejores de su categoría', 'en el tramo superior', 'por debajo de la media',
   'en el tramo inferior', 'en torno a la media de categoría'
+- NUNCA uses expresiones como 'líder de la categoría', 'el mejor de la categoría' o 
+  'número uno de la categoría' sin contexto — esto puede confundirse con liderazgo 
+  real de mercado
+- Cuando un producto destaca en los rankings, especifica siempre el contexto:
+  usa 'entre los productos testados en MALRG', 'en el panel de productos testados',
+  'dentro de los productos evaluados en esta campaña', 'entre los referencias 
+  analizadas en Carrefour Drive'
+- Nunca impliques que los resultados del ranking representan el mercado completo
 
 OTRAS REGLAS:
 - Cada insight empieza con el dato más impactante, no con contexto
@@ -70,6 +78,28 @@ def run(session: SessionConfig, analysis_data: dict, validated_data: dict, alert
         else "Rédige tous les insights en FRANÇAIS."
     )
 
+    tone_instructions = {
+        "ejecutivo": """TONO EJECUTIVO:
+- Frases cortas y directas
+- Empieza cada insight con el dato más impactante
+- Sin jerga técnica de research
+- El lector es un director que quiere el qué y el para qué""",
+
+        "técnico": """TONO TÉCNICO:
+- Usa terminología precisa: Top 2 Box, T2B, significatividad estadística
+- Incluye metodología cuando sea relevante
+- El lector es un analista que quiere entender los datos en profundidad
+- Puedes usar términos como quintil, percentil, delta""",
+
+        "comercial": """TONO COMERCIAL:
+- Foco en oportunidades de mercado y argumentos de venta
+- Énfasis en fortalezas y diferenciación competitiva
+- Lenguaje orientado a acción: capitalizar, activar, convertir
+- El lector es un account manager o director comercial""",
+    }
+
+    tone_instruction = tone_instructions.get(session.tone, tone_instructions["ejecutivo"])
+
     print("[SA5] Generando insights con Claude...")
 
     message = client.messages.create(
@@ -79,7 +109,7 @@ def run(session: SessionConfig, analysis_data: dict, validated_data: dict, alert
         messages=[{
             "role": "user",
             "content": f"""{lang_instruction}
-Tono: {session.tone}
+{tone_instruction}
 
 ## DATOS DE LA CAMPAÑA:
 {json.dumps(insights_data, ensure_ascii=False, indent=2)}
