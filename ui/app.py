@@ -120,6 +120,12 @@ if st.session_state.stage == "config":
             options=["ejecutivo", "técnico", "comercial"],
             format_func=lambda x: x.capitalize(),
         )
+        tone_descriptions = {
+            "ejecutivo": "📊 Directo y conciso. Foco en impacto de negocio y decisiones estratégicas. Sin tecnicismos.",
+            "técnico": "🔬 Análisis detallado con terminología de research. Para analistas y research managers.",
+            "comercial": "💼 Orientado a ventas y marketing. Foco en oportunidades, argumentos de venta y diferenciación.",
+        }
+        st.caption(tone_descriptions[tone]))
 
     st.markdown("---")
     st.markdown("### 📁 Archivos de campaña")
@@ -179,64 +185,62 @@ elif st.session_state.stage == "running":
     progress_bar = st.progress(0)
     status_text = st.empty()
 
+    steps_log = st.container()
+    log_messages = []
+
     def progress_callback(step: str, message: str, percent: int):
         progress_bar.progress(percent / 100)
         status_text.markdown(f"**{message}**")
+        log_messages.append(f"{'✅' if percent > 0 else '❌'} {message}")
 
+    # Ejecutar pipeline
     result = st.session_state.orchestrator.run_pipeline(
-        user_id="streamlit_user",
-        excel_path=st.session_state.excel_path,
-        pdf_path=st.session_state.pdf_path,
-        tone=st.session_state.tone,
-        language=st.session_state.language,
-        progress_callback=progress_callback,
-        skip_source_validation=st.session_state.get("skip_source_validation", False),
-    )
+    user_id="streamlit_user",
+    excel_path=st.session_state.excel_path,
+    pdf_path=st.session_state.pdf_path,
+    tone=st.session_state.tone,
+    language=st.session_state.language,
+    progress_callback=progress_callback,
+    skip_source_validation=st.session_state.get("skip_source_validation", False),
+)
 
+# Limpiar el flag después de usarlo
     st.session_state.skip_source_validation = False
+
     st.session_state.pipeline_result = result
 
     if result["status"] == "success":
+        # Leer el .txt generado
         txt_path = result["onepager_path"]
         if txt_path and Path(txt_path).exists():
             st.session_state.insights_text = Path(txt_path).read_text(encoding="utf-8")
             st.session_state.insights_path = txt_path
+
         progress_bar.progress(1.0)
         status_text.markdown("**✅ Informe generado correctamente**")
         st.session_state.stage = "results"
         st.rerun()
 
-    elif result["status"] == "source_mismatch_error":
-        progress_bar.progress(0)
-        st.warning("⚠️ Los archivos pueden no ser de la misma campaña")
-        st.markdown("Verifica que has subido el Excel y PDF correctos antes de continuar.")
-        col1, col2 = st.columns(2)
-        with col1:
-            if st.button("✅ Continuar igualmente"):
-                st.session_state.skip_source_validation = True
-                st.session_state.stage = "running"
-                st.rerun()
-        with col2:
-            if st.button("⬅️ Volver a cargar archivos"):
-                st.session_state.orchestrator.reset()
-                st.session_state.stage = "config"
-                st.rerun()
-
-    elif result["status"] == "validation_error":
-        progress_bar.progress(0)
-        st.error("❌ Error de validación en los datos")
-        st.markdown(f"{result.get('error', '')}")
-        if st.button("⬅️ Volver a intentarlo"):
-            st.session_state.orchestrator.reset()
-            st.session_state.stage = "config"
-            st.rerun()
-
     else:
         progress_bar.progress(0)
-        st.error("❌ Algo ha ido mal")
-        st.markdown(f"{result.get('error', 'Error desconocido')}")
-        st.markdown("Si el problema persiste, contacta con el administrador.")
-        if st.button("⬅️ Volver a intentarlo"):
+        error = result.get("error", "Error desconocido")
+
+        if result["status"] == "source_mismatch_error":
+            st.warning("⚠️ Los archivos pueden no ser de la misma campaña")
+            #st.markdown(f"> {result.get('error', '')}")
+            st.markdown("Verifica que has subido el Excel y PDF correctos antes de continuar.")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        if st.button("✅ Continuar igualmente"):
+            # Relanzar pipeline saltando la validación cruzada
+            st.session_state.skip_source_validation = True
+            st.session_state.stage = "running"
+            st.rerun()
+
+    with col2:
+        if st.button("⬅️ Volver a cargar archivos"):
             st.session_state.orchestrator.reset()
             st.session_state.stage = "config"
             st.rerun()
@@ -303,6 +307,36 @@ elif st.session_state.stage == "results":
 
     st.markdown("---")
 
+    # ── Próximos pasos ────────────────────────────────────────
+    st.markdown("#### 🚀 Próximos pasos recomendados")
+    st.markdown(
+        "Basándose en los resultados de esta campaña, el agente puede "
+        "recomendarte cuáles son los siguientes pasos lógicos."
+    )
+
+    next_steps = st.session_state.orchestrator.next_steps_data
+    if next_steps and next_steps.get("recomendaciones"):
+        for rec in next_steps["recomendaciones"]:
+            with st.expander(f"**{rec['producto_nombre']}** — {rec['precio']}"):
+                st.markdown("**¿Por qué encaja con esta campaña?**")
+                st.markdown(rec["por_que_encaja"])
+                st.markdown(f"**Problema que resuelve:** {rec['problema_que_resuelve']}")
+                st.info(f"📞 {rec['call_to_action']}")
+
+        if next_steps.get("mensaje_cierre"):
+            st.markdown(f"*{next_steps['mensaje_cierre']}*")
+
+    else:
+        if st.button("✨ Generar recomendaciones de próximos pasos"):
+            with st.spinner("Analizando los resultados para recomendar los mejores servicios..."):
+                result = st.session_state.orchestrator.generate_upselling()
+            if result["status"] == "success":
+                st.rerun()
+            else:
+                st.error("No se pudieron generar las recomendaciones. Por favor inténtalo de nuevo.")
+
+    st.markdown("---")
+
     # ── Modo conversacional ───────────────────────────────────
     st.markdown("#### 💬 Preguntas sobre la campaña")
     st.markdown(
@@ -335,18 +369,9 @@ elif st.session_state.stage == "results":
                         )
 
     # Input del usuario (fuera del bucle for)
-    with st.form(key="chat_form", clear_on_submit=True):
-        col1, col2 = st.columns([5, 1])
-        with col1:
-            user_input = st.text_input(
-                "Pregunta",
-                placeholder="Escribe tu pregunta aquí...",
-                label_visibility="collapsed"
-            )
-        with col2:
-            submitted = st.form_submit_button("Enviar")
+    user_input = st.chat_input("Escribe tu pregunta aquí...")
 
-    if submitted and user_input:
+    if user_input:
         with st.spinner("Consultando los datos de la campaña..."):
             response = st.session_state.orchestrator.chat(user_input)
 
