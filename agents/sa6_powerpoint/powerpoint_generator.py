@@ -171,6 +171,28 @@ API python-pptx — REFERENCIA MÍNIMA NECESARIA
   cp = cell.text_frame.paragraphs[0]
   cp.text = "Val"; cp.font.size = Pt(10); cp.font.color.rgb = WHITE
 
+  # CRÍTICO — asignación de texto en párrafos:
+  # CORRECTO — párrafo recién creado:
+  p = tf.paragraphs[0]
+  p.text = "texto"          ← OK solo en el PRIMER párrafo vacío
+  
+  # CORRECTO — párrafos adicionales:
+  p2 = tf.add_paragraph()
+  run = p2.add_run()
+  run.text = "texto"        ← SIEMPRE usar add_run() para párrafos adicionales
+  run.font.size = Pt(11)
+  run.font.color.rgb = DARK
+  
+  # ERROR FATAL — nunca hagas esto en un párrafo que ya tiene runs:
+  p2.text = "texto"         ← ERROR: property has no setter
+
+  
+  # CRÍTICO — RGBColor SOLO acepta 3 argumentos (R, G, B):
+  RGBColor(0x4A, 0x90, 0xD9)        ← CORRECTO
+  RGBColor(0x4A, 0x90, 0xD9, 0xFF)  ← ERROR FATAL — nunca uses 4 argumentos
+  # Usa siempre las constantes ya definidas: BLUE, RED, GREEN, ORANGE, etc.
+  # Solo crea RGBColor nuevo si necesitas un color que no está en las constantes.
+
   prs.save(OUTPUT_PATH)   ← OBLIGATORIO al final
 
 ══════════════════════════════════════════════════════════════
@@ -200,11 +222,19 @@ REGLAS DE CONTENIDO — OBLIGATORIAS
   7. Sin nombres de competidores
   8. Mínimo 5 slides · Máximo 7
   9. El código completo NO debe superar 280 líneas — usa bucles y comprensiones de lista
+  10. VARIABLES: usa siempre nombres simples como `slide`, `tf`, `p`, `tbl`
+      NUNCA uses nombres como `slide1`, `slide2`, `slide6`, `tf_kpis`, etc.
+      Cada slide se crea en su propio bloque con `slide = prs.slides.add_slide(...)`
+      y la variable `slide` se reutiliza para cada nueva diapositiva.
+  11. Para añadir párrafos a un text_frame existente usa SIEMPRE add_paragraph() 
+      seguido de add_run(), nunca asignes .text directamente a párrafos adicionales.
 
 ══════════════════════════════════════════════════════════════
 FORMATO DE RESPUESTA — CRÍTICO
 ══════════════════════════════════════════════════════════════
   Solo código Python ejecutable. Sin markdown. Sin comentarios. Sin texto extra.
+  NUNCA uses variables numeradas como slide1, slide2, tf1, tf2, p1, p2...
+  Cada slide es un bloque independiente que reutiliza las mismas variables.
   Primera línea: prs = Presentation()
   Última línea:  prs.save(OUTPUT_PATH)"""
 
@@ -267,6 +297,7 @@ def _generate_pptx_code(
     message = client.messages.create(
         model=ANTHROPIC_MODEL,
         max_tokens=8192,
+        temperature=0.8,
         system=CODE_SYSTEM_PROMPT,
         messages=[{
             "role": "user",
