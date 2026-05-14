@@ -36,7 +36,15 @@ Responde ÚNICAMENTE con el JSON, sin explicaciones ni texto adicional.
 El JSON debe seguir exactamente el esquema que se te proporcionará."""
 
 
-def notify(message):
+def run(
+    session: SessionConfig,
+    excel_path: Path,
+    pdf_path: Path,
+    skip_source_validation: bool = False,
+    progress_callback=None,
+) -> dict:
+
+    def notify(message):
         print(f"[SA1] {message}")
         if progress_callback:
             progress_callback("sa1", message, 10)
