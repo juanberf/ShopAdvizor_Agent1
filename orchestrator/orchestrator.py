@@ -9,6 +9,7 @@ from agents.sa2_validator.validator import run as run_sa2, ValidationError
 from agents.sa3_alerts.alert_calculator import run as run_sa3
 from agents.sa4_analyst.analyst import run as run_sa4
 from agents.sa5_redactor.redactor import run as run_sa5
+from agents.sa7_upselling.upselling import run as run_sa7
 from tools.json_writer import save_json, load_json
 
 
@@ -51,6 +52,7 @@ class Orchestrator:
         self.analysis_data: dict = None
         self.onepager_path: Path = None
         self.pdf_path: Path = None
+        self.next_steps_data: dict = None
         self.conversation_history: list = []
         self.client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
@@ -84,6 +86,9 @@ class Orchestrator:
         def notify(step, message, percent):
             print(f"[{percent}%] {message}")
             if progress_callback:
+                if step == "sa1":
+                    progress_callback(step, message, 10)
+            else:
                 progress_callback(step, message, percent)
 
         # Crear sesión
@@ -106,6 +111,7 @@ class Orchestrator:
                 excel_path,
                 pdf_path,
                 skip_source_validation=skip_source_validation,
+                progress_callback=progress_callback,
             )
             notify("sa1", "✅ Datos extraídos correctamente", 25)
 
@@ -278,6 +284,7 @@ class Orchestrator:
         self.analysis_data = None
         self.onepager_path = None
         self.pdf_path = None
+        self.next_steps_data = None
         self.conversation_history = []
         print("[Orchestrator] Sesión reiniciada")
 
@@ -318,6 +325,23 @@ class Orchestrator:
         except Exception:
             pass
         return ""
+
+    def generate_upselling(self) -> dict:
+        """Genera recomendaciones de upselling bajo demanda."""
+        print("[Orchestrator] Generando recomendaciones de upselling...")
+        try:
+            next_steps = run_sa7(
+                session=self.session,
+                analysis_data=self.analysis_data,
+                alerts_data=self.alerts_data,
+                insights_text=self._get_insights_text(),
+                validated_data=self.validated_data,
+            )
+            self.next_steps_data = next_steps
+            return {"status": "success", "data": next_steps}
+        except Exception as e:
+            print(f"[Orchestrator] Error en SA7: {e}")
+            return {"status": "error", "error": str(e)}
 
     def _init_conversation_context(self):
         """
