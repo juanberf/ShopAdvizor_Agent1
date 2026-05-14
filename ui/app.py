@@ -125,7 +125,7 @@ if st.session_state.stage == "config":
             "técnico": "🔬 Análisis detallado con terminología de research. Para analistas y research managers.",
             "comercial": "💼 Orientado a ventas y marketing. Foco en oportunidades, argumentos de venta y diferenciación.",
         }
-        st.caption(tone_descriptions[tone]))
+        st.caption(tone_descriptions[tone])
 
     st.markdown("---")
     st.markdown("### 📁 Archivos de campaña")
