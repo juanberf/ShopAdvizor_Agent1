@@ -36,20 +36,19 @@ Responde ÚNICAMENTE con el JSON, sin explicaciones ni texto adicional.
 El JSON debe seguir exactamente el esquema que se te proporcionará."""
 
 
-def run(
-    session: SessionConfig,
-    excel_path: Path,
-    pdf_path: Path,
-    skip_source_validation: bool = False,  # ← NUEVO
-) -> dict:
+def notify(message):
+        print(f"[SA1] {message}")
+        if progress_callback:
+            progress_callback("sa1", message, 10)
+
     print(f"[SA1] Iniciando extracción para sesión {session.session_id}")
 
-    print("[SA1] Leyendo Excel...")
+    notify("📖 Leyendo Excel...")
     excel_data = read_excel_sheets(excel_path)
     excel_sheets = _excel_to_text_by_sheet(excel_data)
     excel_full = _excel_to_text(excel_data)
 
-    print("[SA1] Leyendo PDF...")
+    notify("📄 Leyendo PDF...")
     pdf_text = read_pdf_text(pdf_path)
 
     pre_sheet_text = excel_sheets.get("Pre-évaluations", "")
@@ -57,27 +56,23 @@ def run(
 
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
-    # ── Llamada 0: validación cruzada (saltable por el usuario) ──
     if not skip_source_validation:
-        print("[SA1] Llamada 0/5: verificando que Excel y PDF son de la misma campaña...")
+        notify("🔍 Verificando que Excel y PDF son de la misma campaña...")
         _validate_sources_match(client, excel_full, pdf_text)
-    else:
-        print("[SA1] ⚠️ Validación cruzada omitida por decisión del usuario")
 
-    # ── Si llega aquí los archivos coinciden — continuar ─────────
-    print("[SA1] Llamada 1/5: metadata + KPIs + competitivo...")
+    notify("🤖 Extrayendo metadatos y KPIs (1/5)...")
     part1 = _extract_part1(client, excel_full, pdf_text)
 
-    print("[SA1] Llamada 2/5: pre-evaluación completa...")
+    notify("🤖 Extrayendo pre-evaluación (2/5)...")
     part2 = _extract_part2(client, pre_sheet_text)
 
-    print("[SA1] Llamada 3/5: post-evaluación completa...")
+    notify("🤖 Extrayendo post-evaluación (3/5)...")
     part3 = _extract_part3(client, post_sheet_text)
 
-    print("[SA1] Llamada 4/5: qualitative...")
+    notify("🤖 Extrayendo análisis cualitativo (4/5)...")
     part4 = _extract_part4(client, pdf_text)
 
-    print("[SA1] Llamada 5/5: product_attributes...")
+    notify("🤖 Extrayendo atributos del producto (5/5)...")
     part5 = _extract_part5(client, post_sheet_text)
 
     campaign_data = {**part1, **part2, **part3, **part4, **part5}
