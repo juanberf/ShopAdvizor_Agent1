@@ -1,0 +1,204 @@
+# ============================================================
+# ShopAdvizor — Catálogo de Productos para SA7
+# ============================================================
+# Este archivo es la base de conocimiento del agente de upselling.
+# Actualizarlo no requiere cambiar el código.
+# ============================================================
+
+version: "1.0"
+last_updated: "2026-05-12"
+
+productos:
+
+  # ============================================================
+  # SERVICIO 1 — MA COMMUNAUTÉ A TESTÉ (MALRG)
+  # ============================================================
+  - id: "S1"
+    nombre: "Ma Communauté a Testé"
+    subtitulo: "MonAvisLeRendGratuit (MALRG)"
+    precio: "1.200€ por campaña / por EAN + generosidad productos"
+    comercializado_por: "Négociateurs Carrefour"
+    descripcion: >
+      Campaña de test de producto con consumidores reales de Carrefour.
+      El producto es enviado a casa de los testeadores seleccionados,
+      quienes generan avis certificados publicados en el ecosistema Carrefour.
+    que_incluye:
+      - "Test del producto por ~300 shoppers Carrefour seleccionados"
+      - "Generación de avis certificados (15 avis por producto por trimestre en media)"
+      - "Difusión multicanal: email (+430K), newsletter MALRG (+430K), comunidad (+850K)"
+      - "Evaluación pre y post con cuestionarios estructurados"
+      - "+8.000 candidaturas de media por campaña"
+      - "+95% tasa de evaluación"
+    casos_de_uso_ideales:
+      - "Lanzamiento de producto nuevo que necesita validación de consumidores"
+      - "Producto con baja notoriedad que necesita generar trial"
+      - "Producto con pocos avis en Carrefour.fr"
+      - "Producto que necesita prueba de concepto antes de inversión en comunicación"
+      - "Innovación que necesita validación antes de distribución masiva"
+    triggers_desde_campana:
+      - "Notoriedad baja (< 20%) — el producto necesita ser descubierto"
+      - "Pocos reviews disponibles — el producto no tiene suficientes avis"
+      - "SAZ Score bajo — el producto no ha sido validado por consumidores reales"
+      - "Pre-test con expectativas altas pero sin validación post — la prueba no se ha hecho"
+      - "Producto en fase de lanzamiento o relanzamiento"
+    beneficios_clave:
+      - "Genera contenido auténtico y certificado de consumidores reales"
+      - "Amplifica el lanzamiento con difusión multicanal masiva"
+      - "Proporciona insights de mejora del producto antes del lanzamiento masivo"
+      - "Aumenta la visibilidad en Carrefour.fr con el sello 'Testé Communauté Carrefour'"
+    call_to_action: >
+      Contactar con su négociateur Carrefour para integrar MALRG
+      en la próxima campaña de lanzamiento.
+
+  # ============================================================
+  # SERVICIO 2 — MA COMMUNAUTÉ RECOMMANDE
+  # ============================================================
+  - id: "S2"
+    nombre: "Ma Communauté Recommande"
+    subtitulo: "Publicación de avis certificados en el ecosistema Carrefour"
+    precio_por_marca: "850€/mes (1 marca) — hasta 400€/mes (+15 marcas)"
+    precio_por_ean: "95€/mes por EAN"
+    contrato_minimo: "6 meses"
+    comercializado_por: "Shopadvizor"
+    descripcion: >
+      Servicio de publicación continua de notas y avis certificados
+      en Carrefour.fr, la app Carrefour y los catálogos. Maximiza
+      la visibilidad del producto en el ecosistema Carrefour con
+      el sello 'Ma Communauté Recommande'.
+    que_incluye:
+      - "Generación continua de avis certificados via gamificación"
+      - "Publicación de avis en Carrefour.fr, app Carrefour y catálogos"
+      - "Etiqueta 'Ma Communauté Recommande' en ficha producto"
+      - "Quick Access y filtro por notas en Carrefour.fr"
+      - "Explotación de avis en medios propios (trade, marketing, brand page, R&D)"
+      - "15 avis por producto por trimestre en media"
+    casos_de_uso_ideales:
+      - "Producto con buenos resultados en campaña que quiere mantener visibilidad"
+      - "Marca con varios EANs que quiere presencia continua en Carrefour.fr"
+      - "Producto con alto rating que quiere capitalizar su satisfacción"
+      - "Producto que quiere diferenciarse en el lineal digital de Carrefour"
+      - "Marca que quiere reforzar credibilidad ante distribuidores"
+    triggers_desde_campana:
+      - "Rating alto (≥ 4.3) — el producto merece visibilidad en Carrefour.fr"
+      - "NPS alto — los consumidores recomiendan pero no hay canal para amplificarlo"
+      - "Alta satisfacción post-test — capitalizar los resultados positivos de la campaña"
+      - "Notoriedad por debajo de la media — necesita más visibilidad en punto de venta digital"
+      - "Producto líder en su categoría — reforzar posición con el sello de recomendación"
+    beneficios_clave:
+      - "Aumenta la conversión en Carrefour.fr con notas y avis visibles"
+      - "Diferenciación en el lineal digital frente a competidores sin avis"
+      - "Contenido UGC auténtico reutilizable en todos los canales de la marca"
+      - "Señal de confianza para nuevos consumidores en el punto de decisión de compra"
+    call_to_action: >
+      Contactar con Shopadvizor para activar la licencia 'Ma Communauté
+      Recommande' y publicar los avis de la campaña en Carrefour.fr.
+
+  # ============================================================
+  # SERVICIO 3 — MA COMMUNAUTÉ CARREFOUR (3 PACKS)
+  # ============================================================
+
+  - id: "S3_ESSENTIEL"
+    nombre: "Pack Essentiel — Ma Communauté Carrefour"
+    precio: "3.000€"
+    comercializado_por: "Shopadvizor"
+    descripcion: >
+      Pack de entrada para transformar consumidores en embajadores
+      de marca en Ma Communauté Carrefour. Incluye concurso,
+      bannière en home, posts y newsletters.
+    que_incluye:
+      - "1 concurso de 2 semanas para generar engagement"
+      - "1 bannière en la home de Ma Communauté"
+      - "3 posts personalizados en la comunidad"
+      - "3 newsletters a la base MALRG (+430K destinatarios)"
+      - "~900 participantes únicos en media"
+      - "+1.200 interacciones generadas en media"
+      - "Contenido UGC auténtico (fotos, recetas, avis)"
+    casos_de_uso_ideales:
+      - "Marca que quiere generar engagement con consumidores Carrefour"
+      - "Producto que necesita contenido UGC auténtico para sus canales"
+      - "Marca que quiere construir una relación directa con consumidores"
+      - "Producto con buena notoriedad que quiere convertir en fidelización"
+    triggers_desde_campana:
+      - "Fidelidad de marca baja — el producto necesita convertir compradores ocasionales"
+      - "NPS moderado — hay satisfacción pero falta el paso a recomendación activa"
+      - "Alta satisfacción pero baja recomendación — gap entre satisfacción y advocacy"
+      - "Producto con base de clientes fieles que quiere activar embajadores"
+    beneficios_clave:
+      - "Genera contenido UGC reutilizable en todos los canales"
+      - "Crea una relación directa y duradera con consumidores Carrefour"
+      - "Amplifica el mensaje de marca en una comunidad de +850K miembros"
+    call_to_action: >
+      Contactar con Shopadvizor para diseñar el concurso y activar
+      la presencia en Ma Communauté Carrefour.
+
+  - id: "S3_NOTORIETE"
+    nombre: "Pack Notoriété — Ma Communauté Carrefour"
+    precio: "10.000€"
+    comercializado_por: "Shopadvizor"
+    descripcion: >
+      Una semana dedicada donde Ma Communauté Carrefour adopta
+      los colores de la marca. 1 acción por día durante 7 días
+      para generar tráfico, engagement y conversión.
+    que_incluye:
+      - "7 días de presencia exclusiva con los colores de la marca"
+      - "1 acción por día: concurso, quiz, recetas, coulisses, Q&A..."
+      - "Bannière + encart en home de Ma Communauté"
+      - "Channel dédié con contenido 100% personalizable"
+      - "Difusión: email MALRG (+430K), newsletter MALRG (+430K), NL Carrefour (+6M), comunidad (+850K)"
+      - "Objetivo: Attirer → Engager → Convertir"
+    casos_de_uso_ideales:
+      - "Producto o marca con baja notoriedad que necesita visibilidad masiva"
+      - "Lanzamiento de nueva variedad o reformulación"
+      - "Marca que quiere crear un evento alrededor de su producto"
+      - "Producto con innovación percibida baja que quiere reposicionarse"
+    triggers_desde_campana:
+      - "Notoriedad baja o en posición inferior de categoría — necesita visibilidad urgente"
+      - "Innovación percibida baja — el producto no se diferencia de la competencia"
+      - "63%+ descubrió el producto por cupón — dependencia del trial gratuito, falta notoriedad orgánica"
+      - "Awareness limitado — alta satisfacción pero pocos consumidores conocen el producto"
+      - "Intención de compra alta post-test pero notoriedad baja pre-test"
+    beneficios_clave:
+      - "Exposición masiva a +6 millones de shoppers Carrefour"
+      - "Interacción directa con consumidores durante 7 días"
+      - "Contenido generado por la comunidad reutilizable en todos los canales"
+      - "Posicionamiento premium de la marca en el ecosistema Carrefour"
+    call_to_action: >
+      Contactar con Shopadvizor para reservar una semaine dédiée
+      y maximizar la visibilidad de la marca en Ma Communauté Carrefour.
+
+  - id: "S3_INFLUENCE"
+    nombre: "Pack Influence — Ma Communauté Carrefour"
+    precio: "15.000€"
+    comercializado_por: "Shopadvizor"
+    descripcion: >
+      El dispositivo más completo: test del producto en avant-première
+      con los miembros de Ma Communauté Carrefour, generación de
+      contenido positivo y amplificación multicanal máxima.
+    que_incluye:
+      - "Test del producto en avant-première por miembros de Ma Communauté"
+      - "Generación de contenido positivo auténtico (UGC)"
+      - "Amplificación en medios propios de la marca"
+      - "Bannière + encart en home + channel dédié"
+      - "Difusión máxima: email MALRG (+430K), newsletter MALRG (+430K), NL Carrefour (+6M), comunidad (+850K)"
+      - "+8.000 candidaturas de media"
+      - "~300 testeurs seleccionados"
+      - "+95% tasa de evaluación"
+    casos_de_uso_ideales:
+      - "Lanzamiento de producto estratégico que necesita máximo impacto"
+      - "Producto con gran potencial que quiere validar y amplificar simultáneamente"
+      - "Marca que quiere combinar trial + engagement + amplificación en un solo dispositivo"
+      - "Innovación que necesita prioridad absoluta en el lanzamiento"
+    triggers_desde_campana:
+      - "Producto estrella (SAZ alto, NPS alto) que merece amplificación máxima"
+      - "Alta intención de compra post-test — capitalizar el momentum del lanzamiento"
+      - "Notoriedad baja con alta satisfacción — el producto es bueno pero no conocido"
+      - "Impacto transformador del trial — la prueba convierte masivamente"
+      - "Lanzamiento de nuevo SKU o variedad premium"
+    beneficios_clave:
+      - "Lanzamiento más poderoso del mercado Carrefour"
+      - "Triple impacto: test + contenido + amplificación"
+      - "Exposición a millones de shoppers Carrefour desde el primer día"
+      - "Contenido UGC auténtico que valida la calidad del producto"
+    call_to_action: >
+      Contactar con Shopadvizor para diseñar el Pack Influence
+      y maximizar el impacto del próximo lanzamiento.
