@@ -88,8 +88,8 @@ class Orchestrator:
             if progress_callback:
                 if step == "sa1":
                     progress_callback(step, message, 10)
-            else:
-                progress_callback(step, message, percent)
+                else:
+                    progress_callback(step, message, percent)
 
         # Crear sesión
         self.pdf_path = pdf_path
