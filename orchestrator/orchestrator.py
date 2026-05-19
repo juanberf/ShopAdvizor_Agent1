@@ -56,6 +56,7 @@ class Orchestrator:
         self.conversation_history: list = []
         self.client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
+    
     def run_pipeline(
         self,
         user_id: str,
@@ -116,38 +117,41 @@ class Orchestrator:
             notify("sa1", "✅ Datos extraídos correctamente", 25)
 
             # ── SA2: Validación ───────────────────────────────────
-            notify("sa2", "Validando datos extraídos...", 30)
+            notify("sa2", "🔍 Verificando coherencia de los datos extraídos...", 28)
             self.validated_data = run_sa2(self.session, self.raw_data)
             warnings = self.validated_data.get("validation", {}).get("warnings", [])
             if warnings:
-                notify("sa2", f"✅ Validación completada con {len(warnings)} advertencia(s)", 45)
+                notify("sa2", f"✅ Validación completada con {len(warnings)} advertencia(s)", 35)
             else:
-                notify("sa2", "✅ Validación completada sin advertencias", 45)
+                notify("sa2", "✅ Datos validados correctamente", 35)
 
             # ── SA3: Alertas ──────────────────────────────────────
-            notify("sa3", "Calculando alertas...", 50)
+            notify("sa3", "📊 Aplicando reglas de negocio sobre los KPIs...", 38)
             self.alerts_data = run_sa3(self.session, self.validated_data)
             summary = self.alerts_data.get("summary", {})
             notify("sa3", f"✅ Alertas calculadas — "
                           f"🔴 {summary.get('critical', 0)} críticas, "
                           f"🟡 {summary.get('warning', 0)} atención, "
-                          f"🟢 {summary.get('positive', 0)} positivas", 60)
+                          f"🟢 {summary.get('positive', 0)} positivas", 45)
 
             # ── SA4: Análisis ─────────────────────────────────────
-            notify("sa4", "Analizando resultados...", 65)
+            notify("sa4", "🧠 Analizando KPIs y posicionamiento competitivo...", 48)
             self.analysis_data = run_sa4(self.session, self.validated_data, self.alerts_data)
+            notify("sa4", "🧠 Analizando segmentos sociodemográficos...", 60)
+            notify("sa4", "🧠 Generando recomendaciones estratégicas...", 72)
             recs = len(self.analysis_data.get("recommendations", []))
             notify("sa4", f"✅ Análisis completado — {recs} recomendaciones generadas", 80)
 
             # ── SA5: Insights ─────────────────────────────────────
-            notify("sa5", "Generando insights...", 85)
+            notify("sa5", "✍️ Redactando insights ejecutivos...", 83)
             self.onepager_path = run_sa5(
                 self.session,
                 self.analysis_data,
                 self.validated_data,
                 self.alerts_data,
             )
-            notify("sa5", "✅ Insights generados", 100)
+            notify("sa5", "✅ Insights generados correctamente", 100)
+
 
             # Inicializar historial conversacional
             self._init_conversation_context()
