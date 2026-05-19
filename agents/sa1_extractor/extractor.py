@@ -1,5 +1,6 @@
 import anthropic
 import json
+import concurrent.futures
 from pathlib import Path
 
 from config.settings import ANTHROPIC_API_KEY, ANTHROPIC_MODEL, INTERMEDIATE_DIR
@@ -68,20 +69,38 @@ def run(
         notify("🔍 Verificando que Excel y PDF son de la misma campaña...")
         _validate_sources_match(client, excel_full, pdf_text)
 
-    notify("🤖 Extrayendo metadatos y KPIs (1/5)...")
-    part1 = _extract_part1(client, excel_full, pdf_text)
+    notify("🤖 Extrayendo datos en paralelo (5 llamadas simultáneas)...")
 
-    notify("🤖 Extrayendo pre-evaluación (2/5)...")
-    part2 = _extract_part2(client, pre_sheet_text)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+        future_part1 = executor.submit(_extract_part1, client, excel_full, pdf_text)
+        future_part2 = executor.submit(_extract_part2, client, pre_sheet_text)
+        future_part3 = executor.submit(_extract_part3, client, post_sheet_text)
+        future_part4 = executor.submit(_extract_part4, client, pdf_text)
+        future_part5 = executor.submit(_extract_part5, client, post_sheet_text)
 
-    notify("🤖 Extrayendo post-evaluación (3/5)...")
-    part3 = _extract_part3(client, post_sheet_text)
+        # Esperar resultados con feedback de progreso
+        futures = {
+            future_part1: "metadatos y KPIs (1/5)",
+            future_part2: "pre-evaluación (2/5)",
+            future_part3: "post-evaluación (3/5)",
+            future_part4: "análisis cualitativo (4/5)",
+            future_part5: "atributos del producto (5/5)",
+        }
 
-    notify("🤖 Extrayendo análisis cualitativo (4/5)...")
-    part4 = _extract_part4(client, pdf_text)
+        results = {}
+        for future in concurrent.futures.as_completed(futures):
+            label = futures[future]
+            try:
+                results[future] = future.result()
+                notify(f"✅ {label} completado")
+            except Exception as e:
+                raise RuntimeError(f"[SA1] Error extrayendo {label}: {e}")
 
-    notify("🤖 Extrayendo atributos del producto (5/5)...")
-    part5 = _extract_part5(client, post_sheet_text)
+    part1 = results[future_part1]
+    part2 = results[future_part2]
+    part3 = results[future_part3]
+    part4 = results[future_part4]
+    part5 = results[future_part5]
 
     campaign_data = {**part1, **part2, **part3, **part4, **part5}
 
